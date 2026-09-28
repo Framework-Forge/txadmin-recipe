@@ -63,6 +63,13 @@ tasks:
       setr pr_bridge:target:defaults 1
       setr pr_bridge:target:debug 0
       setr pr_bridge:target:leftClick 1
+  
+  # Download default CFX resources
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    ref: master
+    subpath: resources
+    dest: ./resources/[default]
 
   # 5. Geração do server.cfg configurado com convars, banco e idioma
   - action: write_file
