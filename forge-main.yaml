@@ -1,0 +1,177 @@
+$pkgVersion: 1
+name: "Forge Core - Base Padrão (txAdmin Recipe)"
+version: "1.0.0"
+description: "Base oficial da Forge Framework baseada em Qbx otimizada para OneSync Infinity, Lua 5.4 e arquitetura modular PR Bridge."
+author: "Framework Forge"
+
+variables:
+  serverName: "Forge Core - Brasil"
+  serverDesc: "Forge Core baseada em Qbx feita para seu RP, PvP, Freeroam e muito mais!"
+  serverTags: "default, deployer, qbox, forge, brasil"
+  locale: "pt-BR"
+  discordLink: "discord.gg/s7JCXjnsEc"
+  maxClients: 48
+  gameBuild: "3258"
+  svLicense: ""
+  dbConnectionString: ""
+  prEnvironment: "production"
+  adminLicense: "license:570bc9b9844f160d8931d86392262627ce5b1171"
+  adminDiscord: "discord:340522406332465152"
+  adminCitizenId: "citizenid:XAWLN83N"
+
+tasks:
+  # 1. Download do núcleo base oficial Forge-Core
+  - action: download_github
+    src: https://github.com/Framework-Forge/Forge-Core
+    ref: main
+    dest: ./
+
+  # 2. Conexão ao banco de dados (MariaDB / MySQL)
+  - action: connect_database
+
+  # 3. Execução da estrutura de tabelas essenciais
+  - action: query_database
+    file: ./database.sql
+
+  # 4. Geração do arquivo pr_bridge.cfg configurado com os dados do assistente
+  - action: write_file
+    file: ./pr_bridge.cfg
+    data: |
+      ##############################################################
+      ##             PR BRIDGE - CONFIGURAÇÃO GERAL               ##
+      ##############################################################
+      # Este arquivo é executado pelo server.cfg antes do qbx_core
+      
+      # Perfil de Ambiente selecionado
+      setr pr_bridge:environment {{prEnvironment}}
+      setr pr_bridge:callback:secure true
+      
+      # Idioma global da PR Bridge sincronizado com o instalador
+      setr pr_bridge:locale "{{locale}}"
+      
+      # Identificadores com permissão administrativa na PR Bridge
+      set pr_bridge:admin [
+          "{{adminLicense}}",
+          "{{adminDiscord}}",
+          "{{adminCitizenId}}"
+      ]
+      
+      # Configurações de Target nativo da PR Bridge
+      setr pr_bridge:target:toggleHotkey 0
+      setr pr_bridge:target:defaultHotkey RMENU
+      setr pr_bridge:target:drawSprite 24
+      setr pr_bridge:target:defaults 1
+      setr pr_bridge:target:debug 0
+      setr pr_bridge:target:leftClick 1
+
+  # 5. Geração do server.cfg configurado com convars, banco e idioma
+  - action: write_file
+    file: ./server.cfg
+    data: |
+      ## ============================================================== ##
+      ##                   FORGE CORE - SERVER.CFG                      ##
+      ## ============================================================== ##
+      endpoint_add_tcp "0.0.0.0:30120"
+      endpoint_add_udp "0.0.0.0:30120"
+      sv_maxclients {{maxClients}}
+      set steam_webApiKey "none"
+      sets tags "{{serverTags}}"
+      svgui
+
+      ## Identificação e Apresentação do Servidor
+      sv_licenseKey "{{svLicense}}"
+      sv_hostname "{{serverName}}"
+      sets sv_projectName "{{serverName}}"
+      sets sv_projectDesc "{{serverDesc}}"
+      sets locale "{{locale}}"
+      load_server_icon myLogo.png
+      set sv_enforceGameBuild {{gameBuild}}
+
+      ## Conexão ao Banco de Dados (MariaDB / MySQL)
+      set mysql_connection_string "{{dbConnectionString}}"
+
+      ## Configuração de Bate-Papo
+      set resources_useSystemChat true
+      set qbx_chat:joinMessage "^2%s entrou no servidor!\n"
+      set qbx_chat:quitMessage "^1%s saiu do servidor! (%s)\n"
+
+      ## Configuração de Voz
+      exec voice.cfg
+
+      ## Configurações do Qbox Framework
+      setr qb_locale "{{locale}}"
+      setr qbx:enableBridge "true"
+      set qbx:enableQueue "true"
+      set qbx:bucketLockdownMode "inactive"
+      set qbx:discordLink "{{discordLink}}"
+      set qbx:max_jobs_per_player 1
+      set qbx:max_gangs_per_player 1
+      set qbx:setjob_replaces "true"
+      set qbx:setgang_replaces "true"
+      set qbx:cleanPlayerGroups "false"
+      set qbx:allowMethodOverrides "true"
+      set qbx:disableOverrideWarning "false"
+      setr qbx:enableVehiclePersistence "false"
+      setr qbx:vehiclePersistenceType "semi"
+      set qbx:acknowledge "true"
+      setr qbx:enableGroupManagement "false"
+
+      ## Mensagem de Boas-Vindas
+      setr qbx:motd "<p style='padding: 1rem; background-color: #141517; border: 1px solid #373a40; border-radius: 0.5rem; text-align: center;'><span style='color: rgb(255, 122, 26); font-weight: bold;'>Bem-vindo(a) à Forge Framework!</span></p>"
+
+      ## Idiomas Complementares e Clima
+      setr illenium-appearance:locale "{{locale}}"
+      setr weather_disablecd true
+
+      ## Arquivos CFG complementares da base
+      exec ox.cfg
+      exec forge_core.cfg
+      exec pr_bridge.cfg
+      exec permissions.cfg
+      exec misc.cfg
+
+      ## ============================================================== ##
+      ##                    RECURSOS ESSENCIAIS (CORE)                  ##
+      ## ============================================================== ##
+      start mapmanager
+      start baseevents
+      start spawnmanager
+      start sessionmanager
+
+      ensure oxmysql
+      ensure ox_lib
+      ensure qbx_core
+      start glitch-minigames
+      ensure pr_bridge
+      ensure forge-core
+
+      ## ============================================================== ##
+      ##                         OVEREXTENDED                           ##
+      ## ============================================================== ##
+      ensure ox_inventory
+      start ox_doorlock
+
+      ## ============================================================== ##
+      ##                             FORGE                              ##
+      ## ============================================================== ##
+      start forge-loadscreen
+      start space_spawn
+      start forge-radialmenu
+      start forge-smallresources
+
+      ## ============================================================== ##
+      ##                           CLOTHING                             ##
+      ## ============================================================== ##
+      start illenium-appearance
+
+      ## ============================================================== ##
+      ##                          STANDALONE                            ##
+      ## ============================================================== ##
+      start pr_3dsound
+      start screencapture
+      start MugShotBase64
+
+      ## ============================================================== ##
+      ##                            MAPPING                             ##
+      ## ============================================================== ##
+      start bob74_ipl
