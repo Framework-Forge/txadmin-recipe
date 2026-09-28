@@ -1,0 +1,271 @@
+# ============================================================== #
+#            FORGEBOX - CATÁLOGO DE SCRIPTS DA VITRINE           #
+# ============================================================== #
+# Este arquivo é lido dinamicamente pelo Forgebox Installer.
+# Na opção "Forge Completa", todos os scripts são instalados.
+# Na opção "Forge Custom", o usuário seleciona quais deseja.
+
+scripts:
+  # ==============================
+  # NÚCLEO ESSENCIAL (OBRIGATÓRIO)
+  # ==============================
+  - id: "forge_core"
+    name: "Forge Core"
+    slug: "forge-core"
+    category: "Core"
+    description: "Núcleo principal da Framework-Forge com ciclo de vida, eventos de jogador, gerenciamento de grupos e integração total."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-core"
+    tags: ["core", "framework", "essencial"]
+    dependenciesCount: 0
+    isCore: true
+
+  - id: "pr_bridge"
+    name: "PR Bridge"
+    slug: "pr-bridge"
+    category: "Core"
+    description: "Sistema universal de bridge, callbacks seguros, cache de players, permissões administrativas e target nativo da Forge."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/pr_bridge"
+    tags: ["core", "bridge", "segurança", "essencial"]
+    dependenciesCount: 0
+    isCore: true
+
+  - id: "qbx_core"
+    name: "Qbox Core"
+    slug: "qbx_core"
+    category: "Core"
+    description: "Framework base Qbx otimizada para OneSync Infinity, suporte a múltiplos trabalhos e metadados de jogadores."
+    version: "v1.16.0"
+    branch: "main"
+    repoUrl: "https://github.com/Qbox-project/qbx_core"
+    tags: ["core", "qbox", "essencial"]
+    dependenciesCount: 1
+    isCore: true
+
+  # ==============================
+  # RECURSOS FORGE (VITRINE)
+  # ==============================
+  - id: "forge_loadscreen"
+    name: "Forge Loadscreen"
+    slug: "forge-loadscreen"
+    category: "Interface"
+    description: "Tela de carregamento moderna com música ambiente, paleta de cores Space Orange e integração de shutdown nativo."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-loadscreen"
+    youtubeUrl: "https://www.youtube.com/@forge_framework"
+    tags: ["ui", "loadscreen", "apresentacao"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_hud"
+    name: "Forge HUD"
+    slug: "forge-hud"
+    category: "Interface"
+    description: "HUD visual completo com barras de status (vida, colete, fome, sede, estresse), velocímetro e bússola em tempo real."
+    version: "v1.0.2"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-hud"
+    youtubeUrl: "https://www.youtube.com/@forge_framework"
+    tags: ["ui", "hud", "status"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_chat"
+    name: "Forge Chat"
+    slug: "forge-chat"
+    category: "Comunicação"
+    description: "Sistema de chat em tela com canais RP, Twitter/X in-game, comandos `/me`, `/do`, cores customizadas e suporte a tags de staff."
+    version: "v1.0.1"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-chat"
+    tags: ["chat", "comunicacao", "roleplay"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_radialmenu"
+    name: "Forge Radial Menu"
+    slug: "forge-radialmenu"
+    category: "Interface"
+    description: "Menu radial interativo com submenus circulares intuitivos para controle do veículo, animações, roupas e ações rápidas."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-radialmenu"
+    tags: ["ui", "radial", "atalhos"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "space_spawn"
+    name: "Space Spawn Selector"
+    slug: "space_spawn"
+    category: "Personagens"
+    description: "Seletor de ponto de spawn com visualização de câmera orbital e escolha entre última localização ou pontos de interesse."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/space_spawn"
+    tags: ["spawn", "personagens", "camera"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_backpack"
+    name: "Forge Backpack"
+    slug: "forge-backpack"
+    category: "Inventário"
+    description: "Sistema de mochilas físicas equipáveis com espaço adicional de inventário e sincronização visual com o modelo ped."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-backpack"
+    youtubeUrl: "https://www.youtube.com/@forge_framework"
+    tags: ["inventario", "mochilas", "itens"]
+    dependenciesCount: 2
+    isCore: false
+
+  - id: "forge_garage"
+    name: "Forge Garage"
+    slug: "forge-garage"
+    category: "Veículos"
+    description: "Garagens públicas, privadas e apreendidos com spawn anti-colisão inteligente, recuperação e histórico de veículos."
+    version: "v1.1.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-garage"
+    youtubeUrl: "https://www.youtube.com/@forge_framework"
+    tags: ["veiculos", "garagens", "transporte"]
+    dependenciesCount: 2
+    isCore: false
+
+  - id: "forge_rental"
+    name: "Forge Vehicle Rental"
+    slug: "forge-rental"
+    category: "Veículos"
+    description: "Sistema de aluguel de veículos populares, bicicletas e motos para novos jogadores com devolução e reembolso de caução."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-rental"
+    tags: ["veiculos", "aluguel", "economia"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_gym"
+    name: "Forge Gym"
+    slug: "forge-gym"
+    category: "Roleplay"
+    description: "Sistema de academia interativa na praia de Vespucci com exercícios, aumento de vigor/estamina e redução de estresse."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-gym"
+    tags: ["academia", "status", "roleplay"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_crafting"
+    name: "Forge Crafting"
+    slug: "forge-crafting"
+    category: "Itens"
+    description: "Mesa de criação de itens e armas com bancadas 3D giratórias, níveis de habilidade, receitas e tempo de fabricação."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-crafting"
+    tags: ["crafting", "armas", "fabricacao"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "forge_police"
+    name: "Forge Police & Dispatch"
+    slug: "forge-police"
+    category: "Empregos"
+    description: "Sistema completo para corporações policiais com radar de velocidade, captura de fotos via tela, apreensões e rádio tático."
+    version: "v1.0.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/forge-police"
+    youtubeUrl: "https://www.youtube.com/@forge_framework"
+    tags: ["policia", "empregos", "segurança", "dispatch"]
+    dependenciesCount: 2
+    isCore: false
+
+  # ==============================
+  # ECONOMIA & BANCO
+  # ==============================
+  - id: "renewed_banking"
+    name: "Renewed Banking"
+    slug: "Renewed-Banking"
+    category: "Economia"
+    description: "Sistema bancário moderno com extrato detalhado, contas conjuntas, transferências bancárias e caixas eletrônicos (ATM)."
+    version: "v1.2.1"
+    branch: "main"
+    repoUrl: "https://github.com/Renewed-Scripts/Renewed-Banking"
+    tags: ["banco", "economia", "financeiro"]
+    dependenciesCount: 1
+    isCore: false
+
+  - id: "ox_inventory"
+    name: "Ox Inventory"
+    slug: "ox_inventory"
+    category: "Inventário"
+    description: "Inventário de alta performance com drag-and-drop, armas com acessórios, durabilidade, porta-luvas e baús."
+    version: "v2.42.0"
+    branch: "main"
+    repoUrl: "https://github.com/overextended/ox_inventory"
+    tags: ["inventario", "itens", "ox"]
+    dependenciesCount: 1
+    isCore: false
+
+  # ==============================
+  # SISTEMA DE CELULAR & COMUNICAÇÃO
+  # ==============================
+  - id: "forge_npwd"
+    name: "NPWD Phone + Forge Apps"
+    slug: "npwd"
+    category: "Comunicação"
+    description: "Smartphone independente com aplicativos exclusivos Forge: Banco, Clima, Garagem, Gestão de Empresas (Boss) e Email."
+    version: "v1.3.0"
+    branch: "main"
+    repoUrl: "https://github.com/Framework-Forge/npwd"
+    youtubeUrl: "https://www.youtube.com/@forge_framework"
+    tags: ["celular", "npwd", "aplicativos", "comunicacao"]
+    dependenciesCount: 2
+    isCore: false
+
+  - id: "pma_voice"
+    name: "PMA Voice & Radio"
+    slug: "pma-voice"
+    category: "Comunicação"
+    description: "Sistema de voz espacial 3D com rádio por frequências táticas, microfones de estúdio e efeitos de rádio/megafone."
+    version: "v1.7.0"
+    branch: "main"
+    repoUrl: "https://github.com/AvarianKnight/pma-voice"
+    tags: ["voz", "radio", "audio"]
+    dependenciesCount: 0
+    isCore: false
+
+  # ==============================
+  # SISTEMA DE HABITAÇÃO & CASAS
+  # ==============================
+  - id: "ps_housing"
+    name: "PS Housing & Realtor"
+    slug: "ps-housing"
+    category: "Habitação"
+    description: "Sistema imobiliário com criação de casas, móveis decorativos dinâmicos, trancas por chaves e garagens residenciais."
+    version: "v1.0.5"
+    branch: "main"
+    repoUrl: "https://github.com/Project-Sloth/ps-housing"
+    tags: ["casas", "imobiliaria", "decoracao"]
+    dependenciesCount: 2
+    isCore: false
+
+  # ==============================
+  # APARÊNCIA & ROUPAS
+  # ==============================
+  - id: "illenium_appearance"
+    name: "Illenium Appearance"
+    slug: "illenium-appearance"
+    category: "Aparência"
+    description: "Criação completa de personagens, lojas de roupas, tatuagens, cirurgia plástica e salvamento de guarda-roupas."
+    version: "v1.4.3"
+    branch: "main"
+    repoUrl: "https://github.com/iLLeniumStudios/illenium-appearance"
+    tags: ["roupas", "aparencia", "customizacao"]
+    dependenciesCount: 1
+    isCore: false
