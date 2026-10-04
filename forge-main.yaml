@@ -143,7 +143,6 @@ tasks:
       start mapmanager
       start baseevents
       start spawnmanager
-      start sessionmanager
 
       ensure oxmysql
       ensure ox_lib
