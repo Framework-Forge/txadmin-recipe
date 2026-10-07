@@ -114,23 +114,7 @@ scripts:
     repoUrl: "https://github.com/overextended/ox_doorlock"
     tags: ["portas", "trancas", "ox"]
     dependenciesCount: 1
-    isCore: false
-
-  # ============================================================== #
-  #                         SISTEMA QBOX                           #
-  # ============================================================== #
-  - id: "qbx_idcard"
-    name: "Qbox ID Card"
-    slug: "qbx_idcard"
-    category: "Personagens"
-    directory: "[qbx]"
-    description: "Sistema de documento de identidade com visual moderno, foto e dados do cidadão."
-    version: "v1.1.0"
-    branch: "main"
-    repoUrl: "https://github.com/Qbox-project/qbx_idcard"
-    tags: ["identidade", "documentos", "qbox"]
-    dependenciesCount: 1
-    isCore: false
+    isCore: true
 
   # ============================================================== #
   #                     SCRIPTS DA FORGE FRAMEWORK                 #
