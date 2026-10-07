@@ -71,6 +71,15 @@ tasks:
     subpath: resources
     dest: ./resources/[default]
 
+  
+  # Download oxmysql
+  - action: download_file
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    path: ./tmp/oxmysql.zip
+  - action: unzip
+    src: ./tmp/oxmysql.zip
+    dest: ./resources/[ox]
+
   # 5. Geração do server.cfg configurado com convars, banco e idioma
   - action: write_file
     file: ./server.cfg
