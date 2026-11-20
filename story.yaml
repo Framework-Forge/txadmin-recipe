@@ -1,0 +1,17 @@
+# Catálogo separado. Os módulos abaixo também fazem parte da instalação completa; adicione novos extras após verificar suas releases.
+schemaVersion: 1
+name: Forge Project — loja
+description: Catálogo separado de scripts adicionais portados para a Forge Framework.
+releasePolicy: latest-stable-assets
+defaultInstall: false
+installRoot: resources
+allowedDirectories:
+  - "[forge]"
+  - "[clothing]"
+  - "[housing]"
+  - "[mapping]"
+  - "[standalone]"
+  - "[vehicle_system]"
+  - "[voice]"
+  - "[props-and-peds]"
+scripts: []

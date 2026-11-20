@@ -1,822 +1,845 @@
-# ============================================================== #
-#            FORGEBOX - CATÁLOGO COMPLETO DE SCRIPTS             #
-# ============================================================== #
-# Este catálogo contém todos os scripts presentes no server.cfg da base.
-# O parâmetro 'directory' define a subpasta dentro de 'resources/'
-# onde o script reside ou deve ser criado e instalado.
-
+# Forge Project — gerado por scripts/build-forge-recipes.mjs. Recursos sempre por release estável; CFX oficial é a única exceção de código-fonte.
+schemaVersion: 2
+name: Forge Project — instalação padrão
+releasePolicy: latest-stable-assets
 scripts:
-  # ============================================================== #
-  #                     NÚCLEO ESSENCIAL (CORE)                    #
-  # ============================================================== #
-  - id: "forge_core"
-    name: "Forge Core"
-    slug: "forge-core"
-    category: "Core"
-    directory: "[forge]"
-    description: "Núcleo principal da Framework Forge com eventos de jogador, ciclo de vida, integração de metadados e compatibilidade Qbx."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-core"
-    tags: ["core", "framework", "essencial"]
-    dependenciesCount: 0
-    isCore: true
-
-  - id: "pr_bridge"
-    name: "PR Bridge"
-    slug: "pr_bridge"
-    category: "Core"
-    directory: "[forge]"
-    description: "Bridge universal de alto desempenho com target nativo, callbacks seguros, cache de players e sistema administrativo."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/pr_bridge"
-    tags: ["core", "bridge", "segurança", "essencial"]
-    dependenciesCount: 0
-    isCore: true
-
-  - id: "qbx_core"
-    name: "Qbox Core"
-    slug: "qbx_core"
-    category: "Core"
-    directory: "[qbx]"
-    description: "Framework base Qbx otimizada para OneSync Infinity, suporte a múltiplos trabalhos e metadados de jogadores."
-    version: "v1.16.0"
-    branch: "main"
-    repoUrl: "https://github.com/Qbox-project/qbx_core"
-    tags: ["core", "qbox", "essencial"]
-    dependenciesCount: 1
-    isCore: true
-
-  - id: "oxmysql"
-    name: "OxMySQL"
-    slug: "oxmysql"
-    category: "Core"
-    directory: "[ox]"
-    description: "Driver de alta velocidade para comunicação com banco de dados MySQL e MariaDB no FiveM."
-    version: "v2.10.0"
-    branch: "main"
-    repoUrl: "https://github.com/overextended/oxmysql"
-    tags: ["core", "banco", "mysql", "essencial"]
-    dependenciesCount: 0
-    isCore: true
-
-  - id: "ox_lib"
-    name: "Ox Lib"
-    slug: "ox_lib"
-    category: "Core"
-    directory: "[ox]"
-    description: "Biblioteca independente de utilitários, menus, zonas interativas e interfaces compartilhadas para FiveM."
-    version: "v3.28.0"
-    branch: "main"
-    repoUrl: "https://github.com/overextended/ox_lib"
-    tags: ["core", "biblioteca", "ox", "essencial"]
-    dependenciesCount: 0
-    isCore: true
-
-  - id: "glitch_minigames"
-    name: "Glitch Minigames"
-    slug: "glitch-minigames"
-    category: "Core"
-    directory: "[standalone]"
-    description: "Módulo de minigames de hacker e decodificação exigido por sistemas da base."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/glitch-minigames"
-    tags: ["core", "minigames", "hacker", "essencial"]
-    dependenciesCount: 0
-    isCore: true
-
-  # ============================================================== #
-  #                       SISTEMA OVEREXTENDED                     #
-  # ============================================================== #
-  - id: "ox_inventory"
-    name: "Ox Inventory"
-    slug: "ox_inventory"
-    category: "Inventário"
-    directory: "[ox]"
-    description: "Inventário avançado com peso, slots, drag-and-drop, armas com acessórios, durabilidade e baús dinâmicos."
-    version: "v2.42.0"
-    branch: "main"
-    repoUrl: "https://github.com/overextended/ox_inventory"
-    tags: ["inventario", "itens", "ox"]
-    dependenciesCount: 1
-    isCore: true
-
-  - id: "ox_doorlock"
-    name: "Ox Doorlock"
-    slug: "ox_doorlock"
-    category: "Utilidades"
-    directory: "[ox]"
-    description: "Sistema universal de trancas de portas com sincronização OneSync e suporte a chaves físicas e autorizações por cargo."
-    version: "v1.17.0"
-    branch: "main"
-    repoUrl: "https://github.com/overextended/ox_doorlock"
-    tags: ["portas", "trancas", "ox"]
-    dependenciesCount: 1
-    isCore: true
-
-  # ============================================================== #
-  #                     SCRIPTS DA FORGE FRAMEWORK                 #
-  # ============================================================== #
-  - id: "forge_loadscreen"
-    name: "Forge Loadscreen"
-    slug: "forge-loadscreen"
-    category: "Interface"
-    directory: "[forge]"
-    description: "Tela de carregamento moderna com música ambiente, paleta de cores Space Orange e shutdown nativo integrado."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-loadscreen"
-    youtubeUrl: "https://www.youtube.com/@forge_framework"
-    tags: ["ui", "loadscreen", "forge", "apresentacao"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "space_spawn"
-    name: "Space Spawn"
-    slug: "space_spawn"
-    category: "Personagens"
-    directory: "[forge]"
-    description: "Seletor de ponto de spawn com câmera orbital cinematográfica e escolha entre última localização ou POIs."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/space_spawn"
-    tags: ["spawn", "personagens", "forge", "camera"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "forge_backpack"
-    name: "Forge Backpack"
-    slug: "forge-backpack"
-    category: "Inventário"
-    directory: "[forge]"
-    description: "Sistema de mochilas físicas equipáveis com inventário expandido e sincronização visual com o modelo ped."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-backpack"
-    youtubeUrl: "https://www.youtube.com/@forge_framework"
-    tags: ["inventario", "forge", "mochilas", "itens"]
-    dependenciesCount: 2
-    isCore: false
-
-  - id: "forge_gym"
-    name: "Forge Gym"
-    slug: "forge-gym"
-    category: "Roleplay"
-    directory: "[forge]"
-    description: "Academia interativa com exercícios que aumentam o vigor do personagem e reduzem níveis de estresse."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-gym"
-    tags: ["academia", "status", "forge", "roleplay"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "forge_radialmenu"
-    name: "Forge Radial Menu"
-    slug: "forge-radialmenu"
-    category: "Interface"
-    directory: "[forge]"
-    description: "Menu radial intuitivo e reativo para controle rápido de veículo, animações, roupas e ações do cidadão."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-radialmenu"
-    tags: ["ui", "radial", "forge", "atalhos"]
-    dependenciesCount: 1
-    isCore: true
-
-  - id: "forge_rental"
-    name: "Forge Vehicle Rental"
-    slug: "forge-rental"
-    category: "Veículos"
-    directory: "[forge]"
-    description: "Sistema de aluguel de carros populares, motos e bicicletas com reembolso de caução na devolução."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-rental"
-    tags: ["veiculos", "aluguel", "forge", "transporte"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "forge_smallresources"
-    name: "Forge Small Resources"
-    slug: "forge-smallresources"
-    category: "Utilidades"
-    directory: "[forge]"
-    description: "Coleção otimizada de micro-recursos e funcionalidades gerais do servidor (anti-bunnyhop, afk, densidade de tráfego)."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-smallresources"
-    tags: ["utilidades", "pequenos-recursos", "qualidade-de-vida"]
-    dependenciesCount: 1
-    isCore: true
-
-  - id: "forge_garage"
-    name: "Forge Garage"
-    slug: "forge-garage"
-    category: "Veículos"
-    directory: "[forge]"
-    description: "Garagens públicas, privadas e apreendidos com proteção anti-colisão, histórico de veículos e compartilhamento."
-    version: "v1.1.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-garage"
-    youtubeUrl: "https://www.youtube.com/@forge_framework"
-    tags: ["veiculos", "garagens", "forge", "transporte"]
-    dependenciesCount: 2
-    isCore: false
-
-  - id: "forge_chat"
-    name: "Forge Chat"
-    slug: "forge-chat"
-    category: "Comunicação"
-    directory: "[forge]"
-    description: "Sistema completo de chat em tela com canais RP, Twitter/X in-game, comandos `/me`, `/do` e tags administrativas."
-    version: "v1.0.1"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-chat"
-    tags: ["chat", "comunicacao", "roleplay"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "forge_hud"
-    name: "Forge HUD"
-    slug: "forge-hud"
-    category: "Interface"
-    directory: "[forge]"
-    description: "HUD visual completo com barras de status em tempo real (vida, colete, fome, sede, estresse), bússola e velocímetro."
-    version: "v1.0.2"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-hud"
-    youtubeUrl: "https://www.youtube.com/@forge_framework"
-    tags: ["ui", "hud", "forge", "status"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "forge_crafting"
-    name: "Forge Crafting"
-    slug: "forge-crafting"
-    category: "Itens"
-    directory: "[forge]"
-    description: "Bancadas de fabricação de itens e armas com mesa 3D interativa, níveis de habilidade e tempo de criação."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-crafting"
-    tags: ["crafting", "armas", "forge", "fabricacao"]
-    dependenciesCount: 1
-    isCore: false
-
-  # ============================================================== #
-  #                      ROUPAS & APARÊNCIA                        #
-  # ============================================================== #
-  - id: "illenium_appearance"
-    name: "Illenium Appearance"
-    slug: "illenium-appearance"
-    category: "Aparência"
+  - id: forge_appearance
+    name: forge-appearance
+    slug: forge-appearance
+    category: Personagem
     directory: "[clothing]"
-    description: "Sistema de criação de personagens, lojas de roupas, barbearias, tatuagens, cirurgias plásticas e guarda-roupa."
-    version: "v1.4.3"
-    branch: "main"
-    repoUrl: "https://github.com/iLLeniumStudios/illenium-appearance"
-    tags: ["roupas", "aparencia", "clothing", "customizacao"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "backpacks"
-    name: "Backpacks 3D Models"
-    slug: "backpacks"
-    category: "Aparência"
+    description: "Recurso padrão da Forge Framework: forge-appearance."
+    repoUrl: https://github.com/Framework-Forge/forge-appearance
+    version: latest
+    verifiedVersion: v5.7.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
+  - id: forge_pack_clothing
+    name: forge-pack-clothing
+    slug: forge-pack-clothing
+    category: Personagem
     directory: "[clothing]"
-    description: "Pacote de modelos 3D de mochilas sincronizadas com o script forge-backpack."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/backpacks"
-    tags: ["mochilas", "modelos3d", "clothing", "roupas"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: forge-pack-clothing."
+    repoUrl: https://github.com/Framework-Forge/forge-pack-clothing
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  # ============================================================== #
-  #                         STANDALONE                             #
-  # ============================================================== #
-  - id: "renewed_banking"
-    name: "Renewed Banking"
-    slug: "Renewed-Banking"
-    category: "Economia"
-    directory: "[standalone]"
-    description: "Sistema bancário moderno com extrato detalhado, contas conjuntas, transferências bancárias e caixas eletrônicos (ATM)."
-    version: "v1.2.1"
-    branch: "main"
-    repoUrl: "https://github.com/Renewed-Scripts/Renewed-Banking"
-    tags: ["banco", "economia", "standalone", "financeiro"]
-    dependenciesCount: 1
+    tags:
+      - forge
+      - padrão
+  - id: forge_backpack
+    name: forge-backpack
+    slug: forge-backpack
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-backpack."
+    repoUrl: https://github.com/Framework-Forge/forge-backpack
+    version: latest
+    verifiedVersion: v1.0.5
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "renewed_weathersync"
-    name: "Renewed WeatherSync"
-    slug: "Renewed-Weathersync"
-    category: "Ambiente"
-    directory: "[standalone]"
-    description: "Sincronizador realista de tempo, estações do ano e clima com transições suaves e previsões meteorológicas."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Renewed-Scripts/Renewed-Weathersync"
-    tags: ["clima", "tempo", "standalone", "ambiente"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_chat
+    name: forge-chat
+    slug: forge-chat
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-chat."
+    repoUrl: https://github.com/Framework-Forge/forge-chat
+    version: latest
+    verifiedVersion: v1.4.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "scully_emotemenu"
-    name: "Scully EmoteMenu"
-    slug: "scully_emotemenu"
-    category: "Roleplay"
-    directory: "[standalone]"
-    description: "Menu de animações, posturas, danças e expressões faciais com atalhos rápidos e suporte a sincronização entre dois jogadores."
-    version: "v1.2.0"
-    branch: "main"
-    repoUrl: "https://github.com/Scullyy/scully_emotemenu"
-    tags: ["emotes", "animacoes", "standalone", "roleplay"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_core
+    name: forge-core
+    slug: forge-core
+    category: Forge
+    directory: "[forge]"
+    description: Núcleo autoritativo da Forge Framework.
+    repoUrl: https://github.com/Framework-Forge/forge-core
+    version: latest
+    verifiedVersion: v1.1.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
+  - id: forge_crafting
+    name: forge-crafting
+    slug: forge-crafting
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-crafting."
+    repoUrl: https://github.com/Framework-Forge/forge-crafting
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "pr_elevator"
-    name: "PR Elevator"
-    slug: "pr_elevator"
-    category: "Utilidades"
-    directory: "[standalone]"
-    description: "Sistema de elevadores com interface interativa, múltiplos andares, sons e integração direta com a PR Bridge."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/pr_elevator"
-    tags: ["elevador", "interacao", "standalone", "predios"]
-    dependenciesCount: 1
+    tags:
+      - forge
+      - padrão
+  - id: forge_dk
+    name: forge-dk
+    slug: forge-dk
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-dk."
+    repoUrl: https://github.com/Framework-Forge/forge-dk
+    version: latest
+    verifiedVersion: v2.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "syn_sit"
-    name: "Syn Sit"
-    slug: "Syn_Sit"
-    category: "Roleplay"
-    directory: "[standalone]"
-    description: "Permite que os jogadores se sentem em quaisquer cadeiras, bancos e sofás do mapa de GTA V."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/Syn_Sit"
-    tags: ["sentar", "cadeiras", "standalone", "roleplay"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_fps
+    name: forge-fps
+    slug: forge-fps
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-fps."
+    repoUrl: https://github.com/Framework-Forge/forge-fps
+    version: latest
+    verifiedVersion: v1.3.3
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "pr_3dsound"
-    name: "PR 3D Sound"
-    slug: "pr_3dsound"
-    category: "Áudio"
-    directory: "[standalone]"
-    description: "Motor de reprodução de áudio e sons 3D espaciais em coordenadas específicas do mundo."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/pr_3dsound"
-    tags: ["audio", "sons3d", "standalone", "som"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_garage
+    name: forge-garage
+    slug: forge-garage
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-garage."
+    repoUrl: https://github.com/Framework-Forge/forge-garage
+    version: latest
+    verifiedVersion: v1.4.7
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "screencapture"
-    name: "Screen Capture"
-    slug: "screencapture"
-    category: "Utilidades"
-    directory: "[standalone]"
-    description: "Módulo nativo de captura de fotos in-game para registro policial, RG e identidade."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/screencapture"
-    tags: ["foto", "captura", "standalone", "policia"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_gym
+    name: forge-gym
+    slug: forge-gym
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-gym."
+    repoUrl: https://github.com/Framework-Forge/forge-gym
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "mugshot_base64"
-    name: "MugShot Base64"
-    slug: "MugShotBase64"
-    category: "Utilidades"
-    directory: "[standalone]"
-    description: "Converte imagens e fotos tiradas no jogo em base64 para exibição rápida e armazenamento leve."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/MugShotBase64"
-    tags: ["base64", "imagem", "standalone", "utilidades"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_hud
+    name: forge-hud
+    slug: forge-hud
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-hud."
+    repoUrl: https://github.com/Framework-Forge/forge-hud
+    version: latest
+    verifiedVersion: v2.2.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "xt_prison"
-    name: "XT Prison"
-    slug: "xt-prison"
-    category: "Empregos"
-    directory: "[standalone]"
-    description: "Sistema penitenciário completo de Boilingbroke com trabalhos para redução de pena, celas e segurança."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/xt-prison"
-    tags: ["prisao", "policia", "standalone", "roleplay"]
-    dependenciesCount: 1
+    tags:
+      - forge
+      - padrão
+  - id: forge_jobcenter
+    name: forge-jobcenter
+    slug: forge-jobcenter
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-jobcenter."
+    repoUrl: https://github.com/Framework-Forge/forge-jobcenter
+    version: latest
+    verifiedVersion: v1.2.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "forge_police"
-    name: "Forge Police"
-    slug: "forge-police"
-    category: "Empregos"
-    directory: "[standalone]"
-    description: "Sistema policial avançado com radar, apreensões de veículos, armário de armas, algemas e cache PR Bridge."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge-police"
-    youtubeUrl: "https://www.youtube.com/@forge_framework"
-    tags: ["policia", "seguranca", "standalone", "empregos"]
-    dependenciesCount: 2
+    tags:
+      - forge
+      - padrão
+  - id: forge_loadscreen
+    name: forge-loadscreen
+    slug: forge-loadscreen
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-loadscreen."
+    repoUrl: https://github.com/Framework-Forge/forge-loadscreen
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "ps_dispatch"
-    name: "PS Dispatch"
-    slug: "ps-dispatch"
-    category: "Empregos"
-    directory: "[standalone]"
-    description: "Sistema de chamados de emergência e dispatch unificado para Polícia e Paramédicos (SAMU) com GPS automático."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Project-Sloth/ps-dispatch"
-    tags: ["dispatch", "policia", "standalone", "medico", "chamados"]
-    dependenciesCount: 1
+    tags:
+      - forge
+      - padrão
+  - id: forge_pause
+    name: forge-pause
+    slug: forge-pause
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-pause."
+    repoUrl: https://github.com/Framework-Forge/forge-pause
+    version: latest
+    verifiedVersion: v0.1.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  # ============================================================== #
-  #                       VOZ & SMARTPHONE                         #
-  # ============================================================== #
-  - id: "pma_voice"
-    name: "PMA Voice"
-    slug: "pma-voice"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Sistema de voz espacial 3D com rádio por frequências e efeitos sonoros realistas."
-    version: "v1.7.0"
-    branch: "main"
-    repoUrl: "https://github.com/AvarianKnight/pma-voice"
-    tags: ["voz", "audio", "radio"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_radialmenu
+    name: forge-radialmenu
+    slug: forge-radialmenu
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-radialmenu."
+    repoUrl: https://github.com/Framework-Forge/forge-radialmenu
+    version: latest
+    verifiedVersion: v0.1.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "mm_radio"
-    name: "MM Radio"
-    slug: "mm_radio"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Interface visual para rádio comunicador portátil com suporte a múltiplos canais privados e corporativos."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/mm_radio"
-    tags: ["radio", "voz", "comunicacao"]
-    dependenciesCount: 1
+    tags:
+      - forge
+      - padrão
+  - id: forge_rental
+    name: forge-rental
+    slug: forge-rental
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-rental."
+    repoUrl: https://github.com/Framework-Forge/forge-rental
+    version: latest
+    verifiedVersion: v0.1.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "npwd"
-    name: "NPWD Phone"
-    slug: "npwd"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Smartphone independente em React com câmera, galeria, contatos, mensagens e suporte a aplicativos customizados."
-    version: "v1.3.0"
-    branch: "main"
-    repoUrl: "https://github.com/project-error/npwd"
-    tags: ["celular", "npwd", "voz", "smartphone"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: forge_siren
+    name: forge-siren
+    slug: forge-siren
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-siren."
+    repoUrl: https://github.com/Framework-Forge/forge-siren
+    version: latest
+    verifiedVersion: v2.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "npwd_forge_banking"
-    name: "NPWD App Forge Banking"
-    slug: "npwd-forge-banking"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Aplicativo bancário para o celular NPWD com transferências e extrato."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/npwd-forge-banking"
-    tags: ["app", "celular", "voz", "banco"]
-    dependenciesCount: 2
+    tags:
+      - forge
+      - padrão
+  - id: forge_smallresources
+    name: forge-smallresources
+    slug: forge-smallresources
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-smallresources."
+    repoUrl: https://github.com/Framework-Forge/forge-smallresources
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "npwd_forge_weather"
-    name: "NPWD App Forge Weather"
-    slug: "npwd-forge-weather"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Aplicativo de previsão do tempo e clima sincronizado com o servidor."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/npwd-forge-weather"
-    tags: ["app", "celular", "voz", "clima"]
-    dependenciesCount: 2
+    tags:
+      - forge
+      - padrão
+  - id: pr_bridge
+    name: pr_bridge
+    slug: pr_bridge
+    category: Forge
+    directory: "[forge]"
+    description: Integrações e compatibilidade pública da Forge Framework.
+    repoUrl: https://github.com/Pierremoraes-ofc/pr_bridge
+    version: latest
+    verifiedVersion: v1.4.10
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
+  - id: pr_animateConfig
+    name: pr_animateConfig
+    slug: pr_animateConfig
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: pr_animateConfig."
+    repoUrl: https://github.com/Pierremoraes-ofc/pr_animateConfig
+    version: latest
+    verifiedVersion: v1.2.7
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "npwd_forge_garage"
-    name: "NPWD App Forge Garage"
-    slug: "npwd-forge-garage"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Aplicativo para visualizar veículos na garagem, status e localização."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/npwd-forge-garage"
-    tags: ["app", "celular", "voz", "garagem"]
-    dependenciesCount: 2
-    isCore: false
-
-  - id: "npwd_forge_management"
-    name: "NPWD App Forge Management"
-    slug: "npwd-forge-management"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Aplicativo de gestão empresarial (Boss Menu) para chefes contratarem e gerenciarem salários pelo telefone."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/npwd-forge-management"
-    tags: ["app", "celular", "gestao", "voz", "boss"]
-    dependenciesCount: 2
-    isCore: false
-
-  - id: "npwd_forge_housing"
-    name: "NPWD App Forge Housing"
-    slug: "npwd-forge-housing"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Aplicativo de gerenciamento de imóveis e chaves de residências."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/npwd-forge-housing"
-    tags: ["app", "celular", "voz", "casas"]
-    dependenciesCount: 2
-    isCore: false
-
-  - id: "npwd_forge_mail"
-    name: "NPWD App Forge Mail"
-    slug: "npwd_forge_mail"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Aplicativo de email com notificações e mensagens corporativas."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/npwd_forge_mail"
-    tags: ["app", "celular", "voz", "email"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "forge_npwd"
-    name: "Forge NPWD Bridge"
-    slug: "forge_npwd"
-    category: "Comunicação"
-    directory: "[voice]"
-    description: "Integração do smartphone NPWD com a economia da Forge e a PR Bridge."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/forge_npwd"
-    tags: ["celular", "bridge", "voz", "npwd"]
-    dependenciesCount: 2
-    isCore: false
-
-  # ============================================================== #
-  #                     HABITAÇÃO & IMOBILIÁRIA                    #
-  # ============================================================== #
-  - id: "jordqn_free_shells"
-    name: "Jordqn Free Shells"
-    slug: "jordqn_free_shells"
-    category: "Habitação"
-    directory: "[mapping]"
-    description: "Modelos 3D de interiores e shells de apartamentos, mansões e armazéns para o sistema de casas."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/jordqn_free_shells"
-    tags: ["shells", "casas", "modelos3d"]
-    dependenciesCount: 0
-    isCore: false
-
-  - id: "ps_realtor"
-    name: "PS Realtor"
-    slug: "ps-realtor"
-    category: "Habitação"
+    tags:
+      - forge
+      - padrão
+  - id: space_spawn
+    name: space_spawn
+    slug: space_spawn
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: space_spawn."
+    repoUrl: https://github.com/Framework-Forge/space_spawn
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
+  - id: forge_housing
+    name: forge-housing
+    slug: forge-housing
+    category: Moradia
     directory: "[housing]"
-    description: "Trabalho de corretor imobiliário para criação, venda e gerenciamento de imóveis residenciais."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Project-Sloth/ps-realtor"
-    tags: ["imobiliaria", "corretor", "casas"]
-    dependenciesCount: 1
+    description: "Recurso padrão da Forge Framework: forge-housing."
+    repoUrl: https://github.com/Framework-Forge/forge-housing
+    version: latest
+    verifiedVersion: v2.0.10
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "ps_housing"
-    name: "PS Housing"
-    slug: "ps-housing"
-    category: "Habitação"
+    tags:
+      - forge
+      - padrão
+  - id: forge_realtor
+    name: forge-realtor
+    slug: forge-realtor
+    category: Moradia
     directory: "[housing]"
-    description: "Sistema habitacional com decoração de móveis em tempo real, trancas seguras e garagens residenciais."
-    version: "v1.0.5"
-    branch: "main"
-    repoUrl: "https://github.com/Project-Sloth/ps-housing"
-    tags: ["casas", "moradia", "decoracao"]
-    dependenciesCount: 2
+    description: "Recurso padrão da Forge Framework: forge-realtor."
+    repoUrl: https://github.com/Framework-Forge/forge-realtor
+    version: latest
+    verifiedVersion: v2.0.3
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  # ============================================================== #
-  #                     SISTEMA DE VEÍCULOS                        #
-  # ============================================================== #
-  - id: "cdn_fuel"
-    name: "CDN Fuel"
-    slug: "cdn-fuel"
-    category: "Veículos"
-    directory: "[vehicle_system]"
-    description: "Postos de combustível interativos com bicos de abastecimento, galões portáteis e consumo dinâmico."
-    version: "v2.1.0"
-    branch: "main"
-    repoUrl: "https://github.com/CodineDev/cdn-fuel"
-    tags: ["combustivel", "gasolina", "veiculos"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "pr_carkeys"
-    name: "PR Car Keys"
-    slug: "pr_carkeys"
-    category: "Veículos"
-    directory: "[vehicle_system]"
-    description: "Sistema avançado de chaves automotivas com trancas de portas, chaveiros e persistência de ignição ligada."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/pr_carkeys"
-    tags: ["chaves", "veiculos", "trancas"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "pr_mileage"
-    name: "PR Mileage"
-    slug: "pr_mileage"
-    category: "Veículos"
-    directory: "[vehicle_system]"
-    description: "Quilometragem realista para odômetro com desgaste veicular proporcional à distância percorrida."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/pr_mileage"
-    tags: ["odometro", "quilometragem", "veiculos"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "lvc"
-    name: "Luxart Vehicle Control"
-    slug: "lvc"
-    category: "Veículos"
-    directory: "[vehicle_system]/[luxart]"
-    description: "Controle de sirenes, luzes de emergência e sons de veículos policiais e de resgate."
-    version: "v3.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Lieutenant-Dan/Luxart-Vehicle-Control"
-    tags: ["sirenes", "emergencia", "policia", "veiculos"]
-    dependenciesCount: 1
-    isCore: false
-
-  - id: "rage_ui"
-    name: "RageUI"
-    slug: "RageUI"
-    category: "Veículos"
-    directory: "[vehicle_system]/[luxart]"
-    description: "Biblioteca gráfica de menus nativos utilizada pelo Luxart Vehicle Control."
-    version: "v2.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/ImBaphomet/RageUI"
-    tags: ["ui", "rageui", "veiculos"]
-    dependenciesCount: 0
-    isCore: false
-
-  - id: "veh_service"
-    name: "Vehicle Service Pack"
-    slug: "veh_service"
-    category: "Veículos"
-    directory: "[vehicle_system]/[vehicle]"
-    description: "Pacote de veículos de serviço público e utilitários da base Forge Core."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/veh_service"
-    tags: ["veiculos", "servico", "transporte"]
-    dependenciesCount: 0
-    isCore: false
-
-  - id: "mh6m"
-    name: "MH6M Helicopter"
-    slug: "mh6m"
-    category: "Veículos"
-    directory: "[vehicle_system]/[vehicle]"
-    description: "Modelo de helicóptero tático leve para corporações de resgate e policiamento."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/mh6m"
-    tags: ["helicoptero", "aereo", "veiculos"]
-    dependenciesCount: 0
-    isCore: false
-
-  # ============================================================== #
-  #                     MAPAS & INTERIORES (MLO)                   #
-  # ============================================================== #
-  - id: "bob74_ipl"
-    name: "Bob74 IPL Loader"
-    slug: "bob74_ipl"
-    category: "Mapeamento"
+    tags:
+      - forge
+      - padrão
+  - id: bob74_ipl
+    name: bob74_ipl
+    slug: bob74_ipl
+    category: Mapas
     directory: "[mapping]"
-    description: "Carregador nativo de IPLs de interiores oficiais de GTA V e expansões GTA Online."
-    version: "v2.1.0"
-    branch: "main"
-    repoUrl: "https://github.com/Bob74/bob74_ipl"
-    tags: ["ipl", "mapas", "interiores"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: bob74_ipl."
+    repoUrl: https://github.com/Framework-Forge/bob74_ipl
+    version: latest
+    verifiedVersion: v2.6.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "pillbox"
-    name: "Pillbox Hill Medical Center"
-    slug: "pillbox"
-    category: "Mapeamento"
+    tags:
+      - forge
+      - padrão
+  - id: driver_license
+    name: driver_license
+    slug: driver_license
+    category: Mapas
     directory: "[mapping]"
-    description: "Mapa e interior MLO detalhado do hospital central Pillbox Hill."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/pillbox"
-    tags: ["hospital", "medico", "mlo"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: driver_license."
+    repoUrl: https://github.com/Framework-Forge/driver_license
+    version: latest
+    verifiedVersion: v1.1.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "patoche_paleto_airport_minimap"
-    name: "Paleto Airport Minimap"
-    slug: "patoche_paleto_airport_minimap"
-    category: "Mapeamento"
+    tags:
+      - forge
+      - padrão
+  - id: paletopd
+    name: paletopd
+    slug: paletopd
+    category: Mapas
     directory: "[mapping]"
-    description: "Minimapa do radar com detalhes do aeródromo de Paleto Bay."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/patoche_paleto_airport_minimap"
-    tags: ["minimapa", "radar", "mapas"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: paletopd."
+    repoUrl: https://github.com/Framework-Forge/paletopd
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "patoche_paleto_airport"
-    name: "Patoche Paleto Airport MLO"
-    slug: "patoche_paleto_airport"
-    category: "Mapeamento"
+    tags:
+      - forge
+      - padrão
+  - id: patoche_paleto_airport
+    name: patoche_paleto_airport
+    slug: patoche_paleto_airport
+    category: Mapas
     directory: "[mapping]"
-    description: "Aeroporto completo com hangar e terminal em Paleto Bay."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/patoche_paleto_airport"
-    tags: ["aeroporto", "mlo", "paleto"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: patoche_paleto_airport."
+    repoUrl: https://github.com/Framework-Forge/patoche_paleto_airport
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "driver_license"
-    name: "Driver License DMV School"
-    slug: "driver_license"
-    category: "Mapeamento"
+    tags:
+      - forge
+      - padrão
+  - id: prision_bolingbroke
+    name: prision_bolingbroke
+    slug: prision_bolingbroke
+    category: Mapas
     directory: "[mapping]"
-    description: "Centro e pista de autoescola para provas práticas de habilitação."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/driver_license"
-    tags: ["autoescola", "dmv", "mlo"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: prision_bolingbroke."
+    repoUrl: https://github.com/Framework-Forge/prision_bolingbroke
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "paletopd"
-    name: "Paleto Bay PD Station"
-    slug: "paletopd"
-    category: "Mapeamento"
-    directory: "[mapping]"
-    description: "Delegacia de polícia de Paleto Bay com celas, recepção e estacionamento seguro."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/paletopd"
-    tags: ["delegacia", "policia", "mlo"]
-    dependenciesCount: 0
+    tags:
+      - forge
+      - padrão
+  - id: ox_doorlock
+    name: ox_doorlock
+    slug: ox_doorlock
+    category: Inventário e banco
+    directory: "[ox]"
+    description: "Recurso padrão da Forge Framework: ox_doorlock."
+    repoUrl: https://github.com/Framework-Forge/ox_doorlock
+    version: latest
+    verifiedVersion: v1.22.3
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  # ============================================================== #
-  #                      PROPS & PED MODELS                        #
-  # ============================================================== #
-  - id: "ped_model"
-    name: "Ped Models Pack"
-    slug: "ped_model"
-    category: "Modelos"
+    tags:
+      - forge
+      - padrão
+  - id: ox_inventory
+    name: ox_inventory
+    slug: ox_inventory
+    category: Inventário e banco
+    directory: "[ox]"
+    description: "Recurso padrão da Forge Framework: ox_inventory."
+    repoUrl: https://github.com/Framework-Forge/ox_inventory
+    version: latest
+    verifiedVersion: v2.47.10
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
+  - id: oxmysql
+    name: oxmysql
+    slug: oxmysql
+    category: Inventário e banco
+    directory: "[ox]"
+    description: "Recurso padrão da Forge Framework: oxmysql."
+    repoUrl: https://github.com/overextended/oxmysql
+    version: latest
+    verifiedVersion: v2.14.3
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
+  - id: ped_model
+    name: ped_model
+    slug: ped_model
+    category: Objetos e personagens
     directory: "[props-and-peds]"
-    description: "Pacote de modelos de pedestres (Peds) customizados para NPCs e profissões."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/ped_model"
-    tags: ["peds", "modelos", "npcs"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: ped_model."
+    repoUrl: https://github.com/Framework-Forge/ped_model
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
-
-  - id: "props"
-    name: "Props Pack"
-    slug: "props"
-    category: "Modelos"
+    tags:
+      - forge
+      - padrão
+  - id: props
+    name: props
+    slug: props
+    category: Objetos e personagens
     directory: "[props-and-peds]"
-    description: "Coleção de objetos 3D e props especiais para artesanato, decoração e eventos."
-    version: "v1.0.0"
-    branch: "main"
-    repoUrl: "https://github.com/Framework-Forge/props"
-    tags: ["props", "objetos", "3d"]
-    dependenciesCount: 0
+    description: "Recurso padrão da Forge Framework: props."
+    repoUrl: https://github.com/Framework-Forge/props
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
     isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: glitch_minigames
+    name: glitch-minigames
+    slug: glitch-minigames
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: glitch-minigames."
+    repoUrl: https://github.com/Framework-Forge/glitch-minigames
+    version: latest
+    verifiedVersion: v2.2.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: pr_3dsound
+    name: pr_3dsound
+    slug: pr_3dsound
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: pr_3dsound."
+    repoUrl: https://github.com/Pierremoraes-ofc/pr_3dsound
+    version: latest
+    verifiedVersion: v4.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: pr_elevator
+    name: pr_elevator
+    slug: pr_elevator
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: pr_elevator."
+    repoUrl: https://github.com/Pierremoraes-ofc/pr_elevator
+    version: latest
+    verifiedVersion: v1.1.4
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: ps_dispatch
+    name: ps-dispatch
+    slug: ps-dispatch
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: ps-dispatch."
+    repoUrl: https://github.com/Framework-Forge/ps-dispatch
+    version: latest
+    verifiedVersion: v3.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: Renewed_Banking
+    name: Renewed-Banking
+    slug: Renewed-Banking
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: Renewed-Banking."
+    repoUrl: https://github.com/Framework-Forge/Renewed-Banking
+    version: latest
+    verifiedVersion: v2.1.6
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: Renewed_Weathersync
+    name: Renewed-Weathersync
+    slug: Renewed-Weathersync
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: Renewed-Weathersync."
+    repoUrl: https://github.com/Framework-Forge/Renewed-Weathersync
+    version: latest
+    verifiedVersion: v3.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: screencapture
+    name: screencapture
+    slug: screencapture
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: screencapture."
+    repoUrl: https://github.com/Framework-Forge/screencapture
+    version: latest
+    verifiedVersion: v0.13.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: scully_emotemenu
+    name: scully_emotemenu
+    slug: scully_emotemenu
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: scully_emotemenu."
+    repoUrl: https://github.com/Framework-Forge/scully_emotemenu
+    version: latest
+    verifiedVersion: v2.0.11
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: Syn_Sit
+    name: Syn_Sit
+    slug: Syn_Sit
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: Syn_Sit."
+    repoUrl: https://github.com/Framework-Forge/Syn_Sit
+    version: latest
+    verifiedVersion: v1.0.5
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: xt_prison
+    name: xt-prison
+    slug: xt-prison
+    category: Complementos
+    directory: "[standalone]"
+    description: "Recurso padrão da Forge Framework: xt-prison."
+    repoUrl: https://github.com/Framework-Forge/xt-prison
+    version: latest
+    verifiedVersion: v1.4.10
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: cdn_fuel
+    name: cdn-fuel
+    slug: cdn-fuel
+    category: Veículos
+    directory: "[vehicle_system]"
+    description: "Recurso padrão da Forge Framework: cdn-fuel."
+    repoUrl: https://github.com/Framework-Forge/cdn-fuel
+    version: latest
+    verifiedVersion: v2.2.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: pr_carkeys
+    name: pr_carkeys
+    slug: pr_carkeys
+    category: Veículos
+    directory: "[vehicle_system]"
+    description: "Recurso padrão da Forge Framework: pr_carkeys."
+    repoUrl: https://github.com/Pierremoraes-ofc/pr_carkeys
+    version: latest
+    verifiedVersion: v1.3.3
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: pr_mileage
+    name: pr_mileage
+    slug: pr_mileage
+    category: Veículos
+    directory: "[vehicle_system]"
+    description: "Recurso padrão da Forge Framework: pr_mileage."
+    repoUrl: https://github.com/Pierremoraes-ofc/pr_mileage
+    version: latest
+    verifiedVersion: v2.3.4
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd
+    name: forge-npwd
+    slug: forge-npwd
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd
+    version: latest
+    verifiedVersion: v3.15.3
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_banking
+    name: forge-npwd-banking
+    slug: forge-npwd-banking
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-banking."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-banking
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_garage
+    name: forge-npwd-garage
+    slug: forge-npwd-garage
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-garage."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-garage
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_housing
+    name: forge-npwd-housing
+    slug: forge-npwd-housing
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-housing."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-housing
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_mail
+    name: forge-npwd-mail
+    slug: forge-npwd-mail
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-mail."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-mail
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_management
+    name: forge-npwd-management
+    slug: forge-npwd-management
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-management."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-management
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_shop
+    name: forge-npwd-shop
+    slug: forge-npwd-shop
+    category: Forge
+    directory: "[forge]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-shop."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-shop
+    version: latest
+    verifiedVersion: v1.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: forge_npwd_weather
+    name: forge-npwd-weather
+    slug: forge-npwd-weather
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: forge-npwd-weather."
+    repoUrl: https://github.com/Framework-Forge/forge-npwd-weather
+    version: latest
+    verifiedVersion: v2.0.2
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: mm_radio
+    name: mm_radio
+    slug: mm_radio
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: mm_radio."
+    repoUrl: https://github.com/Framework-Forge/mm_radio
+    version: latest
+    verifiedVersion: v0.2.3
+    releasePolicy: latest-stable
+    default: true
+    isCore: false
+    tags:
+      - forge
+      - padrão
+  - id: pma_voice
+    name: pma-voice
+    slug: pma-voice
+    category: Voz e telefone
+    directory: "[voice]"
+    description: "Recurso padrão da Forge Framework: pma-voice."
+    repoUrl: https://github.com/Framework-Forge/pma-voice
+    version: latest
+    verifiedVersion: v7.0.3
+    releasePolicy: latest-stable
+    default: true
+    isCore: true
+    tags:
+      - forge
+      - padrão
