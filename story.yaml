@@ -1,4 +1,4 @@
-# Catálogo separado. Os módulos abaixo também fazem parte da instalação completa; adicione novos extras após verificar suas releases.
+# Catálogo separado da loja; os recursos padrão permanecem em scripts.yaml. Adicione extras somente após verificar suas releases.
 schemaVersion: 1
 name: Forge Project — loja
 description: Catálogo separado de scripts adicionais portados para a Forge Framework.

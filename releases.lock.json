@@ -1,0 +1,510 @@
+{
+  "checkedAt": "2026-11-20",
+  "policy": "latest-stable-assets",
+  "scripts": [
+    {
+      "id": "forge_appearance",
+      "slug": "forge-appearance",
+      "repoUrl": "https://github.com/Framework-Forge/forge-appearance",
+      "directory": "[clothing]",
+      "verifiedVersion": "v5.7.2",
+      "asset": "forge-appearance-5.7.2-gratuito.zip",
+      "sha256": "2731c24c1cc7dfe0e46f38efaea38b17ba9c2938c8a340a2ef7f1af05b315ce4"
+    },
+    {
+      "id": "forge_pack_clothing",
+      "slug": "forge-pack-clothing",
+      "repoUrl": "https://github.com/Framework-Forge/forge-pack-clothing",
+      "directory": "[clothing]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-pack-clothing-1.0.2.zip",
+      "sha256": "2e138258b45ffc584135924e170486a2ef72ee3808d03fd3f46611591ef8adf7"
+    },
+    {
+      "id": "forge_backpack",
+      "slug": "forge-backpack",
+      "repoUrl": "https://github.com/Framework-Forge/forge-backpack",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.5",
+      "asset": "forge-backpack-1.0.5.zip",
+      "sha256": "32168f0779a6481bb8c7a427acf675c79e07bd1aa0c054fa3c6bf4d3403d41d2"
+    },
+    {
+      "id": "forge_chat",
+      "slug": "forge-chat",
+      "repoUrl": "https://github.com/Framework-Forge/forge-chat",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.4.2",
+      "asset": "forge-chat-1.4.2.zip",
+      "sha256": "61ca0d5168904f8b803645e353c9ccf129a5f185993e2e46cdade390fd34db8f"
+    },
+    {
+      "id": "forge_core",
+      "slug": "forge-core",
+      "repoUrl": "https://github.com/Framework-Forge/forge-core",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.1.2",
+      "asset": "forge-core-1.1.2.zip",
+      "sha256": "fdb466a8dee5e39074f6bb3b15a0ae4a40d6911c1cb74f327a2d5246c468b4e3"
+    },
+    {
+      "id": "forge_crafting",
+      "slug": "forge-crafting",
+      "repoUrl": "https://github.com/Framework-Forge/forge-crafting",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-crafting-1.0.2.zip",
+      "sha256": "de54ced67851822b81a01997df8e2bc4bbe0e54a1b9de68c519e6ebca87788f4"
+    },
+    {
+      "id": "forge_dk",
+      "slug": "forge-dk",
+      "repoUrl": "https://github.com/Framework-Forge/forge-dk",
+      "directory": "[forge]",
+      "verifiedVersion": "v2.0.2",
+      "asset": "forge-dk-2.0.2.zip",
+      "sha256": "08a606c16aff1b45978f8375d2ec444ea2aa77c21588411c03c126663735a153"
+    },
+    {
+      "id": "forge_fps",
+      "slug": "forge-fps",
+      "repoUrl": "https://github.com/Framework-Forge/forge-fps",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.3.3",
+      "asset": "forge-fps-1.3.3.zip",
+      "sha256": "683bf1a71d1ad5db9d2632c41a9844019cbc067fd575357902c135405bc12c87"
+    },
+    {
+      "id": "forge_garage",
+      "slug": "forge-garage",
+      "repoUrl": "https://github.com/Framework-Forge/forge-garage",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.4.7",
+      "asset": "forge-garage-1.4.7.zip",
+      "sha256": "e60b07cce6640800d32564aaffd96659abf9640f00154e0cfdc637ae262e281d"
+    },
+    {
+      "id": "forge_gym",
+      "slug": "forge-gym",
+      "repoUrl": "https://github.com/Framework-Forge/forge-gym",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-gym-1.0.2.zip",
+      "sha256": "b097a56fc7baabdb0037ba69d409b25b71629ebdafff6eb55ec86f2a540fd48f"
+    },
+    {
+      "id": "forge_hud",
+      "slug": "forge-hud",
+      "repoUrl": "https://github.com/Framework-Forge/forge-hud",
+      "directory": "[forge]",
+      "verifiedVersion": "v2.2.2",
+      "asset": "forge-hud-2.2.2.zip",
+      "sha256": "6cb5e05003a8ffd923a284d1a91e19c1fc61b03d532c03559a79d84f9d5e8b75"
+    },
+    {
+      "id": "forge_jobcenter",
+      "slug": "forge-jobcenter",
+      "repoUrl": "https://github.com/Framework-Forge/forge-jobcenter",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.2.2",
+      "asset": "forge-jobcenter-1.2.2.zip",
+      "sha256": "ffc377d728446d34becdabdf8c4081111405ce08eb4dd8eb84fc010ad844f24c"
+    },
+    {
+      "id": "forge_loadscreen",
+      "slug": "forge-loadscreen",
+      "repoUrl": "https://github.com/Framework-Forge/forge-loadscreen",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-loadscreen-1.0.2.zip",
+      "sha256": "124d247fff35cef22e205aca2a45b8eead57b053692725b7caf148b3298d575a"
+    },
+    {
+      "id": "forge_pause",
+      "slug": "forge-pause",
+      "repoUrl": "https://github.com/Framework-Forge/forge-pause",
+      "directory": "[forge]",
+      "verifiedVersion": "v0.1.2",
+      "asset": "forge-pause-0.1.2.zip",
+      "sha256": "6b67aac4f5c5ca645d964f588d5565aee526095059b85c54d13f6cb92e494cf6"
+    },
+    {
+      "id": "forge_radialmenu",
+      "slug": "forge-radialmenu",
+      "repoUrl": "https://github.com/Framework-Forge/forge-radialmenu",
+      "directory": "[forge]",
+      "verifiedVersion": "v0.1.2",
+      "asset": "forge-radialmenu-0.1.2.zip",
+      "sha256": "0117836b55b1de24898130616e139890f01d4b0edc233ae3c7ff41be6692ddf9"
+    },
+    {
+      "id": "forge_rental",
+      "slug": "forge-rental",
+      "repoUrl": "https://github.com/Framework-Forge/forge-rental",
+      "directory": "[forge]",
+      "verifiedVersion": "v0.1.2",
+      "asset": "forge-rental-0.1.2.zip",
+      "sha256": "a57b73f3ed759c81f2f28540622095a9e5fa4db06581667350795704cef03720"
+    },
+    {
+      "id": "forge_siren",
+      "slug": "forge-siren",
+      "repoUrl": "https://github.com/Framework-Forge/forge-siren",
+      "directory": "[forge]",
+      "verifiedVersion": "v2.0.2",
+      "asset": "forge-siren-2.0.2.zip",
+      "sha256": "093ea5709eac4b0ca3a3318577f522a4609202ac9b32e55b6024ef6b3b09ee47"
+    },
+    {
+      "id": "forge_smallresources",
+      "slug": "forge-smallresources",
+      "repoUrl": "https://github.com/Framework-Forge/forge-smallresources",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-smallresources-1.0.2.zip",
+      "sha256": "f0affcacadd76b09be1824c6054976fff7d65cbdf0a4d789aa1b516616cbe811"
+    },
+    {
+      "id": "pr_bridge",
+      "slug": "pr_bridge",
+      "repoUrl": "https://github.com/Pierremoraes-ofc/pr_bridge",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.4.10",
+      "asset": "pr_bridge-1.4.10.zip",
+      "sha256": "5999aade68ee1312fed3d142cd105caab2a0f62a28e42984ec929b21d0c98fcb"
+    },
+    {
+      "id": "pr_animateConfig",
+      "slug": "pr_animateConfig",
+      "repoUrl": "https://github.com/Pierremoraes-ofc/pr_animateConfig",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.2.7",
+      "asset": "pr_animateConfig-1.2.7.zip",
+      "sha256": "074e92c62b5a0322688fb752315a1c8bca012a92867624fac80b46d940588682"
+    },
+    {
+      "id": "space_spawn",
+      "slug": "space_spawn",
+      "repoUrl": "https://github.com/Framework-Forge/space_spawn",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "space_spawn-1.0.2.zip",
+      "sha256": "3321845ecaa06ff021a7a3ac0ba972a75d281c634085e1d7b4414bd223616cff"
+    },
+    {
+      "id": "forge_housing",
+      "slug": "forge-housing",
+      "repoUrl": "https://github.com/Framework-Forge/forge-housing",
+      "directory": "[housing]",
+      "verifiedVersion": "v2.0.10",
+      "asset": "forge-housing-2.0.10.zip",
+      "sha256": "68bb5729c30afd746b30ab7eea7cc65909bc0ee77fd64715a2d28b3d7a542663"
+    },
+    {
+      "id": "forge_realtor",
+      "slug": "forge-realtor",
+      "repoUrl": "https://github.com/Framework-Forge/forge-realtor",
+      "directory": "[housing]",
+      "verifiedVersion": "v2.0.3",
+      "asset": "forge-realtor-2.0.3.zip",
+      "sha256": "fe851c6c2a78c00805075c52868305639e6568df2d1db57474a48eebf516fa84"
+    },
+    {
+      "id": "bob74_ipl",
+      "slug": "bob74_ipl",
+      "repoUrl": "https://github.com/Framework-Forge/bob74_ipl",
+      "directory": "[mapping]",
+      "verifiedVersion": "v2.6.2",
+      "asset": "bob74_ipl-2.6.2.zip",
+      "sha256": "65a3de776ce2e8c7fc1aecafeaefa2ad9145b3d2fe2e6d3ba17ca740f116d88a"
+    },
+    {
+      "id": "driver_license",
+      "slug": "driver_license",
+      "repoUrl": "https://github.com/Framework-Forge/driver_license",
+      "directory": "[mapping]",
+      "verifiedVersion": "v1.1.2",
+      "asset": "driver_license-1.1.2.zip",
+      "sha256": "2cea546eb5ed5b618582b4c0507cdc170bdde74155c30a74be08c864c732933f"
+    },
+    {
+      "id": "paletopd",
+      "slug": "paletopd",
+      "repoUrl": "https://github.com/Framework-Forge/paletopd",
+      "directory": "[mapping]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "paletopd-1.0.2.zip",
+      "sha256": "4d8e7b8b1a21f9d7c5afa2f3f04c30e7d6731a0d31a23b76eb9efbe9a3141c70"
+    },
+    {
+      "id": "patoche_paleto_airport",
+      "slug": "patoche_paleto_airport",
+      "repoUrl": "https://github.com/Framework-Forge/patoche_paleto_airport",
+      "directory": "[mapping]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "patoche_paleto_airport-1.0.2.zip",
+      "sha256": "ff49adb4761e4391771ff5345302e1a7f55111cde9fbd1e00eac06176dee31be"
+    },
+    {
+      "id": "prision_bolingbroke",
+      "slug": "prision_bolingbroke",
+      "repoUrl": "https://github.com/Framework-Forge/prision_bolingbroke",
+      "directory": "[mapping]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "prision_bolingbroke-1.0.2.zip",
+      "sha256": "968d121546d1ce2e11314678e49833cb6ac2f8277169c069e311e594c48f754d"
+    },
+    {
+      "id": "ox_doorlock",
+      "slug": "ox_doorlock",
+      "repoUrl": "https://github.com/Framework-Forge/ox_doorlock",
+      "directory": "[ox]",
+      "verifiedVersion": "v1.22.3",
+      "asset": "ox_doorlock-1.22.3.zip",
+      "sha256": "c2feb475ea6d96980cacb62b666358c48be5a3b8adbe1a8e8198f7e8287efa97"
+    },
+    {
+      "id": "ox_inventory",
+      "slug": "ox_inventory",
+      "repoUrl": "https://github.com/Framework-Forge/ox_inventory",
+      "directory": "[ox]",
+      "verifiedVersion": "v2.47.10",
+      "asset": "ox_inventory-2.47.10.zip",
+      "sha256": "c6d2bdd0f83719cb9b1a51cc88af7cee504dc1bb145d9bc278a2d9ff6c170ccd"
+    },
+    {
+      "id": "oxmysql",
+      "slug": "oxmysql",
+      "repoUrl": "https://github.com/overextended/oxmysql",
+      "directory": "[ox]",
+      "verifiedVersion": "v2.14.3",
+      "asset": "oxmysql.zip",
+      "sha256": "f6db8f612a36a8a75fccde300e8c4135696b5bbca5770cd7f26458949e1f7872"
+    },
+    {
+      "id": "ped_model",
+      "slug": "ped_model",
+      "repoUrl": "https://github.com/Framework-Forge/ped_model",
+      "directory": "[props-and-peds]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "ped_model-1.0.2.zip",
+      "sha256": "a9b64443a934854380e2784346fd6a6d7d2943ab88183dadf7658c85f866cb92"
+    },
+    {
+      "id": "props",
+      "slug": "props",
+      "repoUrl": "https://github.com/Framework-Forge/props",
+      "directory": "[props-and-peds]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "props-1.0.2.zip",
+      "sha256": "491612c5c7a18520f62b48d1e7db58c86ba608e9a7af0c82dac30633933a5aef"
+    },
+    {
+      "id": "glitch_minigames",
+      "slug": "glitch-minigames",
+      "repoUrl": "https://github.com/Framework-Forge/glitch-minigames",
+      "directory": "[standalone]",
+      "verifiedVersion": "v2.2.2",
+      "asset": "glitch-minigames-2.2.2.zip",
+      "sha256": "c029c79fdebf55756181b8de77b1373767d7a99517028d66c1f50467f5ff0399"
+    },
+    {
+      "id": "pr_3dsound",
+      "slug": "pr_3dsound",
+      "repoUrl": "https://github.com/Pierremoraes-ofc/pr_3dsound",
+      "directory": "[standalone]",
+      "verifiedVersion": "v4.0.2",
+      "asset": "pr_3dsound-4.0.2.zip",
+      "sha256": "c33b9ea62f2a0d7110b38ee0ab710c1f05045fa09c551f3daccb1c1344578539"
+    },
+    {
+      "id": "pr_elevator",
+      "slug": "pr_elevator",
+      "repoUrl": "https://github.com/Pierremoraes-ofc/pr_elevator",
+      "directory": "[standalone]",
+      "verifiedVersion": "v1.1.4",
+      "asset": "pr_elevator-1.1.4.zip",
+      "sha256": "94c1f3d75f1fd3e78b393264fbe5cf79a1b2e4e222ab181dedc3eddf2e1f58c7"
+    },
+    {
+      "id": "ps_dispatch",
+      "slug": "ps-dispatch",
+      "repoUrl": "https://github.com/Framework-Forge/ps-dispatch",
+      "directory": "[standalone]",
+      "verifiedVersion": "v3.0.2",
+      "asset": "ps-dispatch-3.0.2.zip",
+      "sha256": "6110fb6578296985fdae4aae2fb4f1aea3822aad7e34553feda1dd6f5e393247"
+    },
+    {
+      "id": "Renewed_Banking",
+      "slug": "Renewed-Banking",
+      "repoUrl": "https://github.com/Framework-Forge/Renewed-Banking",
+      "directory": "[standalone]",
+      "verifiedVersion": "v2.1.6",
+      "asset": "Renewed-Banking-2.1.6.zip",
+      "sha256": "06a0a19aa41b1b4af6afd528e61b48d10a90f36dd25cc939306b0af3b1f98be2"
+    },
+    {
+      "id": "Renewed_Weathersync",
+      "slug": "Renewed-Weathersync",
+      "repoUrl": "https://github.com/Framework-Forge/Renewed-Weathersync",
+      "directory": "[standalone]",
+      "verifiedVersion": "v3.0.2",
+      "asset": "Renewed-Weathersync-3.0.2.zip",
+      "sha256": "8982bd86cb67ba6d0b6d681df8ba4aac5267f1933b3652e7760f7ef406b8b52f"
+    },
+    {
+      "id": "screencapture",
+      "slug": "screencapture",
+      "repoUrl": "https://github.com/Framework-Forge/screencapture",
+      "directory": "[standalone]",
+      "verifiedVersion": "v0.13.2",
+      "asset": "screencapture-0.13.2.zip",
+      "sha256": "1599f6d447f7a685d01c972a5d670aecf99b93e5aaf35fd2132d49c37dcb5393"
+    },
+    {
+      "id": "scully_emotemenu",
+      "slug": "scully_emotemenu",
+      "repoUrl": "https://github.com/Framework-Forge/scully_emotemenu",
+      "directory": "[standalone]",
+      "verifiedVersion": "v2.0.11",
+      "asset": "scully_emotemenu-2.0.11.zip",
+      "sha256": "2f5caa4c750c7978f14cdce2840731e2604e423c153fc9b4bcb999d3ac9953b1"
+    },
+    {
+      "id": "Syn_Sit",
+      "slug": "Syn_Sit",
+      "repoUrl": "https://github.com/Framework-Forge/Syn_Sit",
+      "directory": "[standalone]",
+      "verifiedVersion": "v1.0.5",
+      "asset": "Syn_Sit-1.0.5.zip",
+      "sha256": "40438f0eb302b7df25ca570fd4c64b9909caeeee1cf6d4f689331ab6a6afa8e6"
+    },
+    {
+      "id": "xt_prison",
+      "slug": "xt-prison",
+      "repoUrl": "https://github.com/Framework-Forge/xt-prison",
+      "directory": "[standalone]",
+      "verifiedVersion": "v1.4.10",
+      "asset": "xt-prison-1.4.10.zip",
+      "sha256": "afa294d7afe56aff3f8824802a12aebcc92a835743652a379c36ae1dbe7e6cf3"
+    },
+    {
+      "id": "cdn_fuel",
+      "slug": "cdn-fuel",
+      "repoUrl": "https://github.com/Framework-Forge/cdn-fuel",
+      "directory": "[vehicle_system]",
+      "verifiedVersion": "v2.2.2",
+      "asset": "cdn-fuel-2.2.2.zip",
+      "sha256": "e21f1a3f66273017f07622e5cd8b77a7ff2a6cf61b2155df79f42961348c10d9"
+    },
+    {
+      "id": "pr_carkeys",
+      "slug": "pr_carkeys",
+      "repoUrl": "https://github.com/Pierremoraes-ofc/pr_carkeys",
+      "directory": "[vehicle_system]",
+      "verifiedVersion": "v1.3.3",
+      "asset": "pr_carkeys-1.3.3.zip",
+      "sha256": "506920835d713c62caafa88c62f7317575e8e9af9ff92c8a45c3bc14185ec3d0"
+    },
+    {
+      "id": "pr_mileage",
+      "slug": "pr_mileage",
+      "repoUrl": "https://github.com/Pierremoraes-ofc/pr_mileage",
+      "directory": "[vehicle_system]",
+      "verifiedVersion": "v2.3.4",
+      "asset": "pr_mileage-2.3.4.zip",
+      "sha256": "fce7a403ecf8fa39990e024d51abd9f8a4f7641874548c5cb31d65889fa93221"
+    },
+    {
+      "id": "forge_npwd",
+      "slug": "forge-npwd",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd",
+      "directory": "[voice]",
+      "verifiedVersion": "v3.15.3",
+      "asset": "forge-npwd-3.15.3.zip",
+      "sha256": "bf8a08502d82c2379a50e1449cb4923a0a217b50dcffd68793fbd36623148f2f"
+    },
+    {
+      "id": "forge_npwd_banking",
+      "slug": "forge-npwd-banking",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-banking",
+      "directory": "[voice]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-npwd-banking-1.0.2.zip",
+      "sha256": "2552cb288af7bbe36ce8f1e320b0cdb5b8ff200c9f041210a6248b8b4ff929b5"
+    },
+    {
+      "id": "forge_npwd_garage",
+      "slug": "forge-npwd-garage",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-garage",
+      "directory": "[voice]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-npwd-garage-1.0.2.zip",
+      "sha256": "fdc973330f5af6af12373416a85aef5fe08adec67eb87541d9e26437cb4d39f3"
+    },
+    {
+      "id": "forge_npwd_housing",
+      "slug": "forge-npwd-housing",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-housing",
+      "directory": "[voice]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-npwd-housing-1.0.2.zip",
+      "sha256": "e069d3fc42a6a15c8c5b34563b66b7b37481c400e46e998e0afeb583777f171c"
+    },
+    {
+      "id": "forge_npwd_mail",
+      "slug": "forge-npwd-mail",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-mail",
+      "directory": "[voice]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-npwd-mail-1.0.2.zip",
+      "sha256": "e4c8cd5055545e896498229871a9bea5d06e660628794a4fe1f2e0b2351bcca1"
+    },
+    {
+      "id": "forge_npwd_management",
+      "slug": "forge-npwd-management",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-management",
+      "directory": "[voice]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-npwd-management-1.0.2.zip",
+      "sha256": "5e7df556e445c55c6e1b2f8f3538435bb112e14140c82c5d72ae7ceddee1489e"
+    },
+    {
+      "id": "forge_npwd_shop",
+      "slug": "forge-npwd-shop",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-shop",
+      "directory": "[forge]",
+      "verifiedVersion": "v1.0.2",
+      "asset": "forge-npwd-shop-1.0.2.zip",
+      "sha256": "c32cf5ced99dafd79edb1c5c9baaabf54098a721bd14e51bc325e5692d0b1f98"
+    },
+    {
+      "id": "forge_npwd_weather",
+      "slug": "forge-npwd-weather",
+      "repoUrl": "https://github.com/Framework-Forge/forge-npwd-weather",
+      "directory": "[voice]",
+      "verifiedVersion": "v2.0.2",
+      "asset": "forge-npwd-weather-2.0.2.zip",
+      "sha256": "8bc9b6e37ab5bb286d2b2ab38375619e8e5e0bc7f345f94ad83cd944cc65faa9"
+    },
+    {
+      "id": "mm_radio",
+      "slug": "mm_radio",
+      "repoUrl": "https://github.com/Framework-Forge/mm_radio",
+      "directory": "[voice]",
+      "verifiedVersion": "v0.2.3",
+      "asset": "mm_radio-0.2.3.zip",
+      "sha256": "6dca188daa9870a0239478ab31c12051a802d9169a10ec82a9b6174bda59205b"
+    },
+    {
+      "id": "pma_voice",
+      "slug": "pma-voice",
+      "repoUrl": "https://github.com/Framework-Forge/pma-voice",
+      "directory": "[voice]",
+      "verifiedVersion": "v7.0.3",
+      "asset": "pma-voice-7.0.3.zip",
+      "sha256": "40c03a4381c0fd2d3a04e20e54e4413584488b4358f27d13feb5925faba1d86e"
+    }
+  ]
+}

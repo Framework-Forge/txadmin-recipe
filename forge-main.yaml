@@ -2,7 +2,8 @@
 $pkgVersion: 1
 name: Forge Project — Forge Framework
 version: 2.0.0
-description: Instalação padrão da Forge Framework com pacotes prontos das releases e PR Bridge; sem QBX Core ou ox_lib separados.
+description: Instalação padrão da Forge Framework com núcleo autoritativo Forge Core, integração PR Bridge e pacotes
+  prontos das releases estáveis.
 author: Forge Project
 variables:
   serverName: Forge Project
@@ -7972,19 +7973,19 @@ tasks:
     data: >
       ##############
 
-      ### OX LIB ###
+      ### COMPATIBILIDADE PR BRIDGE ###
 
       ##############
 
 
-      # Set ox_lib colors
+      # Cores da integração visual do PR Bridge
 
       setr ox:primaryColor blue
 
       setr ox:primaryShade 8
 
 
-      # Permitir que os usuários selecionem suas localidades usando /ox_lib (0 = desabilitado, 1 = habilitado)
+      # Preferência de idioma da integração visual
 
       setr ox:userLocales 0
 
@@ -7997,7 +7998,7 @@ tasks:
       # Registro
 
       # Para ativar o registro em log, escolha um provedor de serviços e siga as instruções aqui:
-      https://overextended.dev/ox_lib/Modules/Logger/Server
+      https://github.com/Pierremoraes-ofc/pr_bridge
 
 
       # set ox:logger "fivemanage"
@@ -8138,7 +8139,8 @@ tasks:
       set inventory:webhook ""
 
 
-      # Registro via ox_lib (0: Desativar, 1: Padrão, 2: Incluir AddItem/RemoveItem e todas as compras na loja)
+      # Registro da integração do inventário (0: Desativar, 1: Padrão, 2: Incluir AddItem/RemoveItem e todas as compras
+      na loja)
 
       set inventory:loglevel 1
 
