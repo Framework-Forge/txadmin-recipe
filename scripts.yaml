@@ -71,7 +71,7 @@ scripts:
     description: Núcleo autoritativo da Forge Framework.
     repoUrl: https://github.com/Framework-Forge/forge-core
     version: latest
-    verifiedVersion: v1.1.3
+    verifiedVersion: v1.1.4
     releasePolicy: locked-stable
     default: true
     isCore: true
@@ -79,9 +79,9 @@ scripts:
       - forge
       - padrão
     lockedRelease:
-      tag: v1.1.3
-      asset: forge-core-1.1.3.zip
-      sha256: 23cede83b943a1861db1a59f995157aecb32a8a1e51e979c141877b2410ea2a5
+      tag: v1.1.4
+      asset: forge-core-1.1.4.zip
+      sha256: fabe2cbecb96119aa933731fdf7ff6d70e390499b4cdbd977627bfff55f102fc
   - id: forge_crafting
     name: forge-crafting
     slug: forge-crafting
