@@ -21,6 +21,22 @@ CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- bans | Forge Core: verificacao de banimento na entrada
+CREATE TABLE IF NOT EXISTS `bans` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `license` varchar(50) DEFAULT NULL,
+  `discord` varchar(50) DEFAULT NULL,
+  `ip` varchar(50) DEFAULT NULL,
+  `reason` text DEFAULT NULL,
+  `expire` int(11) DEFAULT NULL,
+  `bannedby` varchar(255) NOT NULL DEFAULT 'LeBanhammer',
+  PRIMARY KEY (`id`),
+  KEY `license` (`license`),
+  KEY `discord` (`discord`),
+  KEY `ip` (`ip`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- forge-crafting | resources/[forge]/[forge-scripts]/forge-crafting/sv_db.lua:110
 CREATE TABLE IF NOT EXISTS `forge-crafting` (
   `craft_id` int NOT NULL AUTO_INCREMENT,
