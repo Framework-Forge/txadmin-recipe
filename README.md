@@ -1,7 +1,7 @@
 # Forge Project — receitas do Hub
 
 - `forge-main.yaml`: configura a base e inclui o SQL padrão e os CFGs. Os arquivos em `files/` são as fontes legíveis desses conteúdos.
-- `scripts.yaml`: os 56 recursos da instalação padrão, nas respectivas categorias de `resources/`. O Hub escolhe o ZIP da última release estável; `verifiedVersion` apenas registra a versão conferida, sem fixar o download.
+- `scripts.yaml`: catálogo de 56 recursos. A Completa instala todos. A Custom mantém os obrigatórios e instala os opcionais selecionados e suas dependências. O Hub 1.1.2 fixa tag e SHA-256 dos recursos acoplados ao boot. O oxmysql oficial e os demais recursos usam a última release estável.
 - `story.yaml`: catálogo separado da loja. Está vazio por solicitação do proprietário; seus itens não entram automaticamente na instalação padrão.
 - `forge-main-example.yaml` no Hub acompanha o conteúdo da receita atual; não deve manter dependências antigas.
 - `releases.lock.json`: registro das publicações conferidas, para revisão e geração dos catálogos.
@@ -21,6 +21,6 @@ O Hub lê `forge-main.yaml` e `scripts.yaml` do repositório oficial no GitHub. 
 
 Esta receita é consumida pelo executor do Hub com o catálogo `scripts.yaml`; seu uso isolado em outro executor txAdmin não foi certificado.
 
-O Forge Project 1.1.0 recusa catálogos e pacotes com os recursos retirados. A ordem principal é CFX → oxmysql → pr_bridge → forge-core. Os aliases históricos fornecidos pelo PR Bridge e os nomes de tabelas SQL continuam preservados.
+O Forge Project 1.1.2 preserva a ordem da receita quando as dependências permitem. O perfil `forge:kernel` é replicado antes do boot. A ordem principal é CFX → oxmysql → PR Bridge → Forge Core → ox_inventory. Renewed-Banking e pr_carkeys são obrigatórios para concluir a ativação. Quando o Housing é selecionado, o Hub instala o serviço de portas como dependência e o inicia antes do Housing e do Realtor. Os aliases do PR Bridge e as tabelas SQL continuam preservados.
 
-Guia vigente: docs/recipe-installer.md. Não use executáveis antigos identificados como Forgebox; a distribuição atual é Forge Project 1.1.0.
+Guia vigente: docs/recipe-installer.md. Não use executáveis antigos identificados como Forgebox; a distribuição atual é Forge Project 1.1.2.

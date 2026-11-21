@@ -71,13 +71,17 @@ scripts:
     description: Núcleo autoritativo da Forge Framework.
     repoUrl: https://github.com/Framework-Forge/forge-core
     version: latest
-    verifiedVersion: v1.1.2
-    releasePolicy: latest-stable
+    verifiedVersion: v1.1.3
+    releasePolicy: locked-stable
     default: true
     isCore: true
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v1.1.3
+      asset: forge-core-1.1.3.zip
+      sha256: 23cede83b943a1861db1a59f995157aecb32a8a1e51e979c141877b2410ea2a5
   - id: forge_crafting
     name: forge-crafting
     slug: forge-crafting
@@ -282,12 +286,16 @@ scripts:
     repoUrl: https://github.com/Pierremoraes-ofc/pr_bridge
     version: latest
     verifiedVersion: v1.4.10
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
     isCore: true
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v1.4.10
+      asset: pr_bridge-1.4.10.zip
+      sha256: 5999aade68ee1312fed3d142cd105caab2a0f62a28e42984ec929b21d0c98fcb
   - id: pr_animateConfig
     name: pr_animateConfig
     slug: pr_animateConfig
@@ -327,12 +335,16 @@ scripts:
     repoUrl: https://github.com/Framework-Forge/forge-housing
     version: latest
     verifiedVersion: v2.0.10
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
     isCore: false
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v2.0.10
+      asset: forge-housing-2.0.10.zip
+      sha256: 68bb5729c30afd746b30ab7eea7cc65909bc0ee77fd64715a2d28b3d7a542663
   - id: forge_realtor
     name: forge-realtor
     slug: forge-realtor
@@ -342,12 +354,16 @@ scripts:
     repoUrl: https://github.com/Framework-Forge/forge-realtor
     version: latest
     verifiedVersion: v2.0.3
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
     isCore: false
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v2.0.3
+      asset: forge-realtor-2.0.3.zip
+      sha256: fe851c6c2a78c00805075c52868305639e6568df2d1db57474a48eebf516fa84
   - id: bob74_ipl
     name: bob74_ipl
     slug: bob74_ipl
@@ -432,12 +448,16 @@ scripts:
     repoUrl: https://github.com/Framework-Forge/ox_doorlock
     version: latest
     verifiedVersion: v1.22.3
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
     isCore: false
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v1.22.3
+      asset: ox_doorlock-1.22.3.zip
+      sha256: c2feb475ea6d96980cacb62b666358c48be5a3b8adbe1a8e8198f7e8287efa97
   - id: ox_inventory
     name: ox_inventory
     slug: ox_inventory
@@ -447,12 +467,16 @@ scripts:
     repoUrl: https://github.com/Framework-Forge/ox_inventory
     version: latest
     verifiedVersion: v2.47.10
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
     isCore: true
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v2.47.10
+      asset: ox_inventory-2.47.10.zip
+      sha256: c6d2bdd0f83719cb9b1a51cc88af7cee504dc1bb145d9bc278a2d9ff6c170ccd
   - id: oxmysql
     name: oxmysql
     slug: oxmysql
@@ -567,12 +591,16 @@ scripts:
     repoUrl: https://github.com/Framework-Forge/Renewed-Banking
     version: latest
     verifiedVersion: v2.1.6
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
-    isCore: false
+    isCore: true
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v2.1.6
+      asset: Renewed-Banking-2.1.6.zip
+      sha256: 06a0a19aa41b1b4af6afd528e61b48d10a90f36dd25cc939306b0af3b1f98be2
   - id: Renewed_Weathersync
     name: Renewed-Weathersync
     slug: Renewed-Weathersync
@@ -672,12 +700,16 @@ scripts:
     repoUrl: https://github.com/Pierremoraes-ofc/pr_carkeys
     version: latest
     verifiedVersion: v1.3.3
-    releasePolicy: latest-stable
+    releasePolicy: locked-stable
     default: true
-    isCore: false
+    isCore: true
     tags:
       - forge
       - padrão
+    lockedRelease:
+      tag: v1.3.3
+      asset: pr_carkeys-1.3.3.zip
+      sha256: 506920835d713c62caafa88c62f7317575e8e9af9ff92c8a45c3bc14185ec3d0
   - id: pr_mileage
     name: pr_mileage
     slug: pr_mileage
