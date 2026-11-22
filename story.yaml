@@ -23,7 +23,7 @@ scripts:
     category: "Personagem"
     tags: ["fivem","roupas"]
     repoUrl: "https://github.com/Framework-Forge/forge-appearance"
-    videoUrl: null
+    videoUrl: "https://www.youtube.com/watch?v=3ZJGVqRxnnM"
     verifiedVersion: "v5.7.2"
   - id: "forge_backpack"
     name: "Forge Backpack"
@@ -263,7 +263,7 @@ scripts:
     category: "Interface"
     tags: ["fivem","menu de pausa"]
     repoUrl: "https://github.com/Framework-Forge/forge-pause"
-    videoUrl: null
+    videoUrl: "https://www.youtube.com/watch?v=aQFdtE496HY"
     verifiedVersion: "v0.1.2"
   - id: "forge_radialmenu"
     name: "Forge Radialmenu"
