@@ -1,7 +1,7 @@
-# Catálogo separado da loja; os recursos padrão permanecem em scripts.yaml. Adicione extras somente após verificar suas releases.
+# Catálogo da Loja. As receitas de instalação permanecem em scripts.yaml.
 schemaVersion: 1
 name: Forge Project — loja
-description: Catálogo separado de scripts adicionais portados para a Forge Framework.
+description: Scripts públicos da Framework Forge.
 releasePolicy: latest-stable-assets
 defaultInstall: false
 installRoot: resources
@@ -14,4 +14,534 @@ allowedDirectories:
   - "[vehicle_system]"
   - "[voice]"
   - "[props-and-peds]"
-scripts: []
+scripts:
+  - id: "bob74_ipl"
+    name: "bob74_ipl"
+    slug: "bob74_ipl"
+    author: "Bob_74"
+    description: "Carrega interiores e configura elementos do mapa do GTA V."
+    category: "Mapas"
+    tags: ["fivem","ipl"]
+    repoUrl: "https://github.com/Framework-Forge/bob74_ipl"
+    videoUrl: null
+    verifiedVersion: "v2.6.2"
+  - id: "cdn_fuel"
+    name: "CDN Fuel"
+    slug: "cdn-fuel"
+    author: "CodineDev / LegacyFuel"
+    description: "Sistema de abastecimento, recarga elétrica, galões e postos de combustível."
+    category: "Veículos"
+    tags: ["fivem","combustível"]
+    repoUrl: "https://github.com/Framework-Forge/cdn-fuel"
+    videoUrl: "https://www.youtube.com/watch?v=_h-66IDs8Kw"
+    verifiedVersion: "v2.2.2"
+  - id: "driver_license"
+    name: "Driver License"
+    slug: "driver_license"
+    author: "GREENCome"
+    description: "Mapa do departamento de trânsito de San Andreas."
+    category: "Mapas"
+    tags: ["fivem","dmv"]
+    repoUrl: "https://github.com/Framework-Forge/driver_license"
+    videoUrl: null
+    verifiedVersion: "v1.1.2"
+  - id: "forge_appearance"
+    name: "Forge Appearance"
+    slug: "forge-appearance"
+    author: "snakewiz & iLLeniumStudios"
+    description: "Personalização de personagens, roupas e aparência no FiveM."
+    category: "Personagem"
+    tags: ["fivem","roupas"]
+    repoUrl: "https://github.com/Framework-Forge/forge-appearance"
+    videoUrl: null
+    verifiedVersion: "v5.7.2"
+  - id: "forge_backpack"
+    name: "Forge Backpack"
+    slug: "forge-backpack"
+    author: "forge Devs - Pierre Moraes"
+    description: "Sistema de mochilas integrado ao inventário da Forge."
+    category: "Inventário"
+    tags: ["fivem","mochilas"]
+    repoUrl: "https://github.com/Framework-Forge/forge-backpack"
+    videoUrl: null
+    verifiedVersion: "v1.0.5"
+  - id: "forge_chat"
+    name: "Forge Chat"
+    slug: "forge-chat"
+    author: "Mystic & Rainfalls / layout update"
+    description: "Chat personalizável com emojis, GIFs e stickers administráveis."
+    category: "Interface"
+    tags: ["fivem","chat"]
+    repoUrl: "https://github.com/Framework-Forge/forge-chat"
+    videoUrl: null
+    verifiedVersion: "v1.4.2"
+  - id: "forge_core"
+    name: "Forge Core"
+    slug: "forge-core"
+    author: "Forge Devs - PierreMoraes"
+    description: "Núcleo da Forge Framework para personagens, sistemas de jogo e integrações."
+    category: "Framework"
+    tags: ["fivem","core"]
+    repoUrl: "https://github.com/Framework-Forge/forge-core"
+    videoUrl: null
+    verifiedVersion: "v1.1.4"
+  - id: "forge_crafting"
+    name: "Forge Crafting"
+    slug: "forge-crafting"
+    author: "Forge-Core"
+    description: "Receitas, bancadas de fabricação e progressão de crafting."
+    category: "Inventário"
+    tags: ["fivem","crafting"]
+    repoUrl: "https://github.com/Framework-Forge/forge-crafting"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_dk"
+    name: "Forge DK"
+    slug: "forge-dk"
+    author: "Forge — original assets by Byte Labs"
+    description: "Documentos e serviços ao cidadão, com configuração de NPCs."
+    category: "Personagem"
+    tags: ["fivem","documentos"]
+    repoUrl: "https://github.com/Framework-Forge/forge-dk"
+    videoUrl: null
+    verifiedVersion: "v2.0.2"
+  - id: "forge_fps"
+    name: "Forge FPS"
+    slug: "forge-fps"
+    author: "Forge Project - by: PierreMoraes"
+    description: "Medição de desempenho local e ajustes gráficos no FiveM."
+    category: "Ferramentas"
+    tags: ["fivem","desempenho"]
+    repoUrl: "https://github.com/Framework-Forge/forge-fps"
+    videoUrl: null
+    verifiedVersion: "v1.3.3"
+  - id: "forge_garage"
+    name: "Forge Garage"
+    slug: "forge-garage"
+    author: "Reyghita Hafizh Firmanda"
+    description: "Gerencia garagens, armazenamento e retirada de veículos."
+    category: "Veículos"
+    tags: ["fivem","garagem"]
+    repoUrl: "https://github.com/Framework-Forge/forge-garage"
+    videoUrl: null
+    verifiedVersion: "v1.4.7"
+  - id: "forge_gym"
+    name: "Forge Gym"
+    slug: "forge-gym"
+    author: "Forge - PierreMoraes"
+    description: "Academia com exercícios, estações interativas e progressão."
+    category: "Personagem"
+    tags: ["fivem","academia"]
+    repoUrl: "https://github.com/Framework-Forge/forge-gym"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_housing"
+    name: "Forge Housing"
+    slug: "forge-housing"
+    author: "Xirvin#0985 and Project Sloth"
+    description: "Sistema de imóveis, interiores e gestão de propriedades."
+    category: "Moradia"
+    tags: ["fivem","imóveis"]
+    repoUrl: "https://github.com/Framework-Forge/forge-housing"
+    videoUrl: null
+    verifiedVersion: "v2.0.10"
+  - id: "forge_hud"
+    name: "Forge HUD"
+    slug: "forge-hud"
+    author: "Forge - PierreMoraes"
+    description: "HUD com informações do personagem e indicadores de veículos."
+    category: "Interface"
+    tags: ["fivem","hud"]
+    repoUrl: "https://github.com/Framework-Forge/forge-hud"
+    videoUrl: null
+    verifiedVersion: "v2.2.2"
+  - id: "forge_jobcenter"
+    name: "Forge Jobcenter"
+    slug: "forge-jobcenter"
+    author: "Framework Forge"
+    description: "Central de empregos e contatos com editor administrativo."
+    category: "Personagem"
+    tags: ["fivem","empregos"]
+    repoUrl: "https://github.com/Framework-Forge/forge-jobcenter"
+    videoUrl: null
+    verifiedVersion: "v1.2.2"
+  - id: "forge_loadscreen"
+    name: "Forge Loadscreen"
+    slug: "forge-loadscreen"
+    author: "forge devs - Spacer dev / PierreMoraes"
+    description: "Tela de carregamento configurável para servidores Forge."
+    category: "Interface"
+    tags: ["fivem","loadscreen"]
+    repoUrl: "https://github.com/Framework-Forge/forge-loadscreen"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_management"
+    name: "Forge Management"
+    slug: "forge-management"
+    author: "forge Devs - PierreMoraes"
+    description: "Painel NUI para gerenciamento de plugins dos recursos Forge."
+    category: "Ferramentas"
+    tags: ["fivem","administração"]
+    repoUrl: "https://github.com/Framework-Forge/forge-management"
+    videoUrl: null
+    version: "1.3.0"
+  - id: "forge_npwd"
+    name: "Forge NPWD"
+    slug: "forge-npwd"
+    author: "Equipe NPWD / Framework Forge"
+    description: "Telefone persistente com suporte a múltiplos aparelhos no Forge Core."
+    category: "Telefone"
+    tags: ["fivem","npwd"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd"
+    videoUrl: "https://www.youtube.com/watch?v=Yh8gT8wuywU"
+    verifiedVersion: "v3.15.3"
+  - id: "forge_npwd_appexemple"
+    name: "Forge NPWD App Example"
+    slug: "forge-npwd-appexemple"
+    author: "Framework Forge"
+    description: "Exemplo reutilizável de aplicativo externo e widget para Forge NPWD."
+    category: "Telefone"
+    tags: ["fivem","desenvolvimento"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-appexemple"
+    videoUrl: null
+    version: "1.0.0"
+  - id: "forge_npwd_banking"
+    name: "Forge NPWD Banking"
+    slug: "forge-npwd-banking"
+    author: "ForgeBox - PierreMoraes"
+    description: "Aplicativo do Renewed Banking para o Forge NPWD."
+    category: "Telefone"
+    tags: ["fivem","banco"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-banking"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_npwd_garage"
+    name: "Forge NPWD Garage"
+    slug: "forge-npwd-garage"
+    author: "ForgeBox - PierreMoraes"
+    description: "Aplicativo de garagem e notificações de veículos para o Forge NPWD."
+    category: "Telefone"
+    tags: ["fivem","garagem"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-garage"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_npwd_housing"
+    name: "Forge NPWD Housing"
+    slug: "forge-npwd-housing"
+    author: "ForgeBox"
+    description: "Aplicativo de propriedades integrado ao Forge Housing."
+    category: "Telefone"
+    tags: ["fivem","moradia"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-housing"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_npwd_mail"
+    name: "Forge NPWD Mail"
+    slug: "forge-npwd-mail"
+    author: "PierreMoraes"
+    description: "Aplicativo de e-mail integrado ao Forge NPWD pelo PR Bridge."
+    category: "Telefone"
+    tags: ["fivem","e-mail"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-mail"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_npwd_management"
+    name: "Forge NPWD Management"
+    slug: "forge-npwd-management"
+    author: "ForgeBox - PierreMoraes"
+    description: "Aplicativo de chefia e gerenciamento para o Forge NPWD."
+    category: "Telefone"
+    tags: ["fivem","chefia"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-management"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_npwd_shop"
+    name: "Forge NPWD Shop"
+    slug: "forge-npwd-shop"
+    author: "Forge Devs"
+    description: "Loja e central de recuperação de aparelhos do Forge NPWD."
+    category: "Telefone"
+    tags: ["fivem","loja"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-shop"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_npwd_weather"
+    name: "Forge NPWD Weather"
+    slug: "forge-npwd-weather"
+    author: "ForgeBox - PierreMoraes"
+    description: "Aplicativo de previsão do tempo para o Forge NPWD."
+    category: "Telefone"
+    tags: ["fivem","clima"]
+    repoUrl: "https://github.com/Framework-Forge/forge-npwd-weather"
+    videoUrl: null
+    verifiedVersion: "v2.0.2"
+  - id: "forge_pack_clothing"
+    name: "Forge Pack Clothing"
+    slug: "forge-pack-clothing"
+    author: "Pierre Moraes"
+    description: "Pacote de roupas e acessórios de mochila para personagens."
+    category: "Personagem"
+    tags: ["fivem","roupas"]
+    repoUrl: "https://github.com/Framework-Forge/forge-pack-clothing"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_pause"
+    name: "Forge Pause"
+    slug: "forge-pause"
+    author: "Forge"
+    description: "Menu de pausa integrado ao PR Bridge."
+    category: "Interface"
+    tags: ["fivem","menu de pausa"]
+    repoUrl: "https://github.com/Framework-Forge/forge-pause"
+    videoUrl: null
+    verifiedVersion: "v0.1.2"
+  - id: "forge_radialmenu"
+    name: "Forge Radialmenu"
+    slug: "forge-radialmenu"
+    author: "Qbox Project / Framework Forge"
+    description: "Menu radial para atalhos e ações do personagem."
+    category: "Interface"
+    tags: ["fivem","menu radial"]
+    repoUrl: "https://github.com/Framework-Forge/forge-radialmenu"
+    videoUrl: null
+    verifiedVersion: "v0.1.2"
+  - id: "forge_realtor"
+    name: "Forge Realtor"
+    slug: "forge-realtor"
+    author: "Xirvin & Project Sloth"
+    description: "Gerenciamento imobiliário integrado ao Forge Housing."
+    category: "Moradia"
+    tags: ["fivem","corretora"]
+    repoUrl: "https://github.com/Framework-Forge/forge-realtor"
+    videoUrl: null
+    verifiedVersion: "v2.0.3"
+  - id: "forge_rental"
+    name: "Forge Rental"
+    slug: "forge-rental"
+    author: "Forge - PierreMoraes"
+    description: "Sistema de aluguel de veículos com pontos configuráveis."
+    category: "Veículos"
+    tags: ["fivem","aluguel"]
+    repoUrl: "https://github.com/Framework-Forge/forge-rental"
+    videoUrl: null
+    verifiedVersion: "v0.1.2"
+  - id: "forge_siren"
+    name: "Forge Siren"
+    slug: "forge-siren"
+    author: "Forge // AvarianKnight // FjamZoo"
+    description: "Controle de sirenes de veículos de emergência integrado ao PR Bridge."
+    category: "Veículos"
+    tags: ["fivem","emergência"]
+    repoUrl: "https://github.com/Framework-Forge/forge-siren"
+    videoUrl: null
+    verifiedVersion: "v2.0.2"
+  - id: "forge_smallresources"
+    name: "Forge Smallresources"
+    slug: "forge-smallresources"
+    author: "Forge Core"
+    description: "Coleção modular de utilitários e ajustes para o servidor Forge."
+    category: "Framework"
+    tags: ["fivem","utilitários"]
+    repoUrl: "https://github.com/Framework-Forge/forge-smallresources"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "forge_weapons"
+    name: "Forge Weapons"
+    slug: "forge-weapons"
+    author: "PierreMoraes"
+    description: "Script que permite arremessar armas no FiveM."
+    category: "Personagem"
+    tags: ["fivem","armas"]
+    repoUrl: "https://github.com/Framework-Forge/forge-weapons"
+    videoUrl: "https://www.youtube.com/watch?v=VTTCEAAXg4o"
+    version: "1.1.1"
+  - id: "glitch_minigames"
+    name: "Glitch Minigames"
+    slug: "glitch-minigames"
+    author: "Luma in collaboration with Glitch Studios"
+    description: "Coleção de minijogos com exports para integração a outros scripts."
+    category: "Ferramentas"
+    tags: ["fivem","minijogos"]
+    repoUrl: "https://github.com/Framework-Forge/glitch-minigames"
+    videoUrl: null
+    verifiedVersion: "v2.2.2"
+  - id: "illenium_appearance"
+    name: "Illenium Appearance"
+    slug: "illenium-appearance"
+    author: "snakewiz & iLLeniumStudios"
+    description: "Editor de aparência, roupas e personalização para FiveM."
+    category: "Personagem"
+    tags: ["fivem","aparência"]
+    repoUrl: "https://github.com/Framework-Forge/illenium-appearance"
+    videoUrl: null
+    version: "main"
+  - id: "mm_radio"
+    name: "MM Radio"
+    slug: "mm_radio"
+    author: "Master Mind"
+    description: "Interface de rádio e canais de voz para FiveM."
+    category: "Voz"
+    tags: ["fivem","rádio"]
+    repoUrl: "https://github.com/Framework-Forge/mm_radio"
+    videoUrl: "https://youtu.be/r3IPvXDpMVs"
+    verifiedVersion: "v0.2.3"
+  - id: "ox_doorlock"
+    name: "Ox Doorlock"
+    slug: "ox_doorlock"
+    author: "Overextended"
+    description: "Sistema de controle e bloqueio de portas."
+    category: "Mapas"
+    tags: ["fivem","portas"]
+    repoUrl: "https://github.com/Framework-Forge/ox_doorlock"
+    videoUrl: null
+    verifiedVersion: "v1.22.3"
+  - id: "ox_inventory"
+    name: "Ox Inventory"
+    slug: "ox_inventory"
+    author: "Overextended"
+    description: "Inventário por slots com suporte a metadados de itens."
+    category: "Inventário"
+    tags: ["fivem","itens"]
+    repoUrl: "https://github.com/Framework-Forge/ox_inventory"
+    videoUrl: null
+    verifiedVersion: "v2.47.10"
+  - id: "paletopd"
+    name: "Paleto PD"
+    slug: "paletopd"
+    author: "Framework Forge (publicação)"
+    description: "Mapa da delegacia de Paleto Bay."
+    category: "Mapas"
+    tags: ["fivem","polícia"]
+    repoUrl: "https://github.com/Framework-Forge/paletopd"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "patoche_paleto_airport"
+    name: "Patoche Paleto Airport"
+    slug: "patoche_paleto_airport"
+    author: "Patoche#4702"
+    description: "Mapa de aeroporto em Paleto Bay criado por Patoche."
+    category: "Mapas"
+    tags: ["fivem","aeroporto"]
+    repoUrl: "https://github.com/Framework-Forge/patoche_paleto_airport"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "ped_model"
+    name: "Ped Models"
+    slug: "ped_model"
+    author: "ForgeQbox - PierreMoraes"
+    description: "Pacote de modelos de personagens para FiveM."
+    category: "Personagem"
+    tags: ["fivem","peds"]
+    repoUrl: "https://github.com/Framework-Forge/ped_model"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "pma_voice"
+    name: "PMA Voice"
+    slug: "pma-voice"
+    author: "AvarianKnight"
+    description: "Comunicação por voz de proximidade, rádio e chamadas baseada em Mumble."
+    category: "Voz"
+    tags: ["fivem","mumble"]
+    repoUrl: "https://github.com/Framework-Forge/pma-voice"
+    videoUrl: null
+    verifiedVersion: "v7.0.3"
+  - id: "prision_bolingbroke"
+    name: "Prisão de Bolingbroke"
+    slug: "prision_bolingbroke"
+    author: "Framework Forge (publicação)"
+    description: "Conjunto de mapas da prisão de Bolingbroke com bloco principal, refeitório e sala de reuniões."
+    category: "Mapas"
+    tags: ["fivem","prisão"]
+    repoUrl: "https://github.com/Framework-Forge/prision_bolingbroke"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "props"
+    name: "Props"
+    slug: "props"
+    author: "ForgeQbox - PierreMoraes"
+    description: "Pacote de objetos e modelos para uso em recursos FiveM."
+    category: "Mapas"
+    tags: ["fivem","objetos"]
+    repoUrl: "https://github.com/Framework-Forge/props"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "ps_dispatch"
+    name: "PS Dispatch"
+    slug: "ps-dispatch"
+    author: "Project Sloth & OK1ez"
+    description: "Sistema de alertas e despacho para serviços de emergência no FiveM."
+    category: "Ferramentas"
+    tags: ["fivem","despacho"]
+    repoUrl: "https://github.com/Framework-Forge/ps-dispatch"
+    videoUrl: null
+    verifiedVersion: "v3.0.2"
+  - id: "renewed_banking"
+    name: "Renewed Banking"
+    slug: "Renewed-Banking"
+    author: "uShifty#1733"
+    description: "Sistema de contas pessoais e compartilhadas, saldos e transações."
+    category: "Banco"
+    tags: ["fivem","banco"]
+    repoUrl: "https://github.com/Framework-Forge/Renewed-Banking"
+    videoUrl: null
+    verifiedVersion: "v2.1.6"
+  - id: "renewed_weathersync"
+    name: "Renewed WeatherSync"
+    slug: "Renewed-Weathersync"
+    author: "FjamZoo - Renewed Scripts / Forge Core JSON panel"
+    description: "Sincronização de clima e hora do servidor para os jogadores."
+    category: "Mapas"
+    tags: ["fivem","clima"]
+    repoUrl: "https://github.com/Framework-Forge/Renewed-Weathersync"
+    videoUrl: null
+    verifiedVersion: "v3.0.2"
+  - id: "screencapture"
+    name: "ScreenCapture"
+    slug: "screencapture"
+    author: "Framework Forge (publicação)"
+    description: "Captura de imagens e vídeos do jogo via FiveM."
+    category: "Ferramentas"
+    tags: ["fivem","captura de tela"]
+    repoUrl: "https://github.com/Framework-Forge/screencapture"
+    videoUrl: null
+    verifiedVersion: "v0.13.2"
+  - id: "scully_emotemenu"
+    name: "Scully Emote Menu"
+    slug: "scully_emotemenu"
+    author: "Scully"
+    description: "Menu de animações, expressões e emotes para FiveM."
+    category: "Personagem"
+    tags: ["fivem","emotes"]
+    repoUrl: "https://github.com/Framework-Forge/scully_emotemenu"
+    videoUrl: null
+    verifiedVersion: "v2.0.11"
+  - id: "space_spawn"
+    name: "Space_spawn"
+    slug: "space_spawn"
+    author: "forge devs - Spacer dev"
+    description: "Seleção de ponto de entrada do personagem em uma interface NUI."
+    category: "Personagem"
+    tags: ["fivem","spawn"]
+    repoUrl: "https://github.com/Framework-Forge/space_spawn"
+    videoUrl: null
+    verifiedVersion: "v1.0.2"
+  - id: "syn_sit"
+    name: "Syn Sit"
+    slug: "Syn_Sit"
+    author: "Framework Forge (publicação)"
+    description: "Animações e interação para sentar em assentos do cenário."
+    category: "Personagem"
+    tags: ["fivem","animações"]
+    repoUrl: "https://github.com/Framework-Forge/Syn_Sit"
+    videoUrl: null
+    verifiedVersion: "v1.0.5"
+  - id: "xt_prison"
+    name: "XT Prison"
+    slug: "xt-prison"
+    author: "xT Development / Forge Core"
+    description: "Sistema prisional integrado à Forge pelo PR Bridge."
+    category: "Personagem"
+    tags: ["fivem","prisão"]
+    repoUrl: "https://github.com/Framework-Forge/xt-prison"
+    videoUrl: null
+    verifiedVersion: "v1.4.10"
